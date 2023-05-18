@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+        <img src="C:\Users\Mazen\Desktop\logo.png"alt="logo"> </h1>
+        <hq>Welcome to SE Online Banking Website</hq>
+    </header>
+  <div class="container">
+    
+    <!-- User Story 1: Apply for a loan -->
+    <div class="loan">
+      <h2>Apply for a Loan</h2>
+      <form>
+        <label for="loan-type">Loan Type:</label>
+        <select id="loan-type">
+          <option value="personal">Personal Loan</option>
+          <option value="car">Car Loan</option>
+        </select>
+        <button type="submit">Apply</button>
+      </form>
+    </div>
+
+    <!-- User Story 2: View bank account transactions -->
+    <div class="bank-transactions">
+      <h2>Bank Account Transactions</h2>
+      <button id="view-bank-transactions">View Transactions</button>
+      <table id="bank-transactions-table">
+        <!-- transaction data will be dynamically populated here using JavaScript -->
+      </table>
+    </div>
+
+    <!-- User Story 3: View credit card transactions -->
+    <div class="credit-card-transactions">
+      <h2>Credit Card Transactions</h2>
+      <button id="view-credit-card-transactions">View Transactions</button>
+      <table id="credit-card-transactions-table">
+        <!-- transaction data will be dynamically populated here using JavaScript -->
+      </table>
+    </div>
+
+    <!-- User Story 4: View credit card points and redeem them -->
+    <div class="credit-card-points">
+      <h2>Credit Card Points</h2>
+      <p>Total Points: <span id="credit-card-points">0</span></p>
+      <button id="redeem-cashback">Redeem Cashback</button>
+    </div>
+
+    <!-- User Story 5: Pay credit card bill -->
+    <div class="credit-card-bill">
+      <h2>Credit Card Bill Payment</h2>
+      <form>
+        <label for="bill-amount">Bill Amount:</label>
+        <input type="number" id="bill-amount" step="0.01" min="0" required>
+        <button type="submit">Pay</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

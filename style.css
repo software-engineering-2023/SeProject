@@ -1,0 +1,71 @@
+.container {
+    max-width: 2000px;
+    margin: 150 auto;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-style:italic;
+    width: 18%;
+    
+    background-image: url("file:///C:/Users/Mazen/Desktop/aa.png");
+    background-size: 25% auto; 
+    
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: medium;
+  }
+  hq{
+    color: rgb(255, 255, 255);
+    margin-right: auto;
+    text-align:center;
+    
+  }
+  header{
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  img{
+    width: 200px;
+    height: auto;
+    text-align: left;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  button {
+    margin-top: 10px;
+    background-color:rgb(15, 8, 97);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table td, table th {
+    padding: 5px;
+    border: 1px solid rgb(0, 163, 41);
+  }
+  
+  .credit-card-points p {
+    margin-top: 10px;
+  }
+  body{
+    background-image: url(https://wallpaperaccess.com/full/1169788.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .credit-card

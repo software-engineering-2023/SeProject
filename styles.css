@@ -1,0 +1,364 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+header{
+  position: relative;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  border-bottom: 1px solid white;
+}
+header img{
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+h1{
+	padding:15px;
+	padding-left:20px;
+}
+
+nav, main, footer {
+  padding: 20px;
+}
+
+nav ,header{
+  width: 1000;
+  background-color: navy;
+  color: white;
+}
+
+nav ul {
+  white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  background-color: navy;
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-right: 1px solid white; 
+}
+
+nav ul li:last-child a {
+  border-right: none; 
+}
+
+nav ul li a:hover {
+  background-color: #001f3f;
+}
+
+main {
+  margin-left: 20px;
+  background-color: white;
+  color: navy;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+/* Section Styles */
+h1, h2 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+/* Account Summary Styles */
+#customer-management {
+  padding: 20px;
+}
+
+.customer-search {
+  margin-bottom: 20px;
+}
+
+.customer-search h3 {
+  margin-top: 0;
+}
+
+.customer-search form {
+  display: flex;
+  align-items: center;
+}
+
+.customer-search input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+}
+
+.customer-search button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customer-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.customer-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.customer-list li:last-child {
+  border-bottom: none;
+}
+
+.customer-list .customer-name {
+  font-weight: bold;
+}
+
+.customer-list .customer-id {
+  color: #777;
+  font-size: 14px;
+}
+
+.customer-list .view-details {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Transaction History Styles */
+#transaction-history {
+  padding: 20px;
+}
+
+.transaction-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transaction-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.transaction-list li:last-child {
+  border-bottom: none;
+}
+
+.transaction-list .transaction-date {
+  font-weight: bold;
+}
+
+.transaction-list .transaction-description {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.transaction-list .transaction-amount {
+  color: #777;
+}
+
+/* Reports Styles */
+#reports {
+  padding: 20px;
+}
+
+.report-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.report-list li:last-child {
+  border-bottom: none;
+}
+
+.report-list .report-name {
+  font-weight: bold;
+}
+
+.report-list .view-report {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Loan Styles */
+#loan {
+  padding: 20px;
+}
+
+.loan-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.loan-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.loan-list li:last-child {
+  border-bottom: none;
+}
+
+.loan-list .loan-id {
+  font-weight: bold;
+}
+
+.loan-list .loan-amount {
+  color: #777;
+}
+
+.loan-list .loan-status {
+  color: navy;
+  text-transform: capitalize;
+}
+
+.loan-list .view-details {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Customer Support Styles */
+#customer-support {
+  padding: 20px;
+}
+
+.customer-support-form {
+  margin-bottom: 20px;
+}
+
+.customer-support-form h3 {
+  margin-top: 0;
+}
+
+.customer-support-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.customer-support-form label {
+  font-weight: bold;
+}
+
+.customer-support-form input[type="text"],
+.customer-support-form input[type="email"],
+.customer-support-form textarea {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.customer-support-form textarea {
+  height: 100px;
+}
+
+.customer-support-form button {
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Account Settings Styles */
+#account-settings {
+  padding: 20px;
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-info h3,
+.account-options h3 {
+  margin-top: 0;
+}
+
+.account-info form {
+  display: grid;
+  gap: 10px;
+}
+
+.account-info label {
+  font-weight: bold;
+}
+
+.account-info input[type="text"],
+.account-info input[type="email"],
+.account-info input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.account-info button {
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.account-options li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.account-options li:last-child {
+  border-bottom: none;
+}

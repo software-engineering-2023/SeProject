@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banker Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome, Banker!</h1>
+    <img src="logo.png" width="150px" height="80px">
+  </header>
+  
+  <nav>
+  <ul class="list">
+    <li ><a href="#customer-management" onclick="toggleSection('hcustomer-management')">Customer Management</a></li>
+    <li ><a href="#transaction-history" onclick="toggleSection('htransaction-history')">Transaction History</a></li>
+    <li ><a href="#reports" onclick="toggleSection('hreports')">Reports</a></li>
+    <li ><a href="#loan-requests" onclick="toggleSection('hloan')">Loan Requests</a></li>
+    <li ><a href="#customer-support" onclick="toggleSection('hcustomer-support')">Customer Support</a></li>
+    <li ><a href="#account-settings" onclick="toggleSection('haccount-settings')">Account Settings</a></li>
+</ul>
+  </nav>
+  
+  <main>
+    
+    <section class="sections" id="hcustomer-management">
+  <h2>Customer Management</h2>
+  <div class="customer-search">
+    <h3>Search Customers</h3>
+    <form>
+      <input type="text" placeholder="Enter customer name or ID">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <div class="customer-list">
+    <h3>Customer List</h3>
+    <ul>
+      <li>
+        <span class="customer-name">John Doe</span>
+        <span class="customer-id">#123456</span>
+        <button class="view-details">View Details</button>
+      </li>
+      <li>
+        <span class="customer-name">Jane Smith</span>
+        <span class="customer-id">#789012</span>
+        <button class="view-details">View Details</button>
+      </li>
+      <!-- Add more customer list items as needed -->
+    </ul>
+  </div>
+</section>
+
+    
+<section class="sections" id="htransaction-history" >
+  <h2>Transaction History</h2>
+  <div class="transaction-list">
+    <ul>
+      <li>
+        <span class="transaction-date">2023-05-15</span>
+        <span class="transaction-description">Deposit</span>
+        <span class="transaction-amount">+ $500.00</span>
+      </li>
+      <li>
+        <span class="transaction-date">2023-05-14</span>
+        <span class="transaction-description">Withdrawal</span>
+        <span class="transaction-amount">- $200.00</span>
+      </li>
+      <!-- Add more transaction list items as needed -->
+    </ul>
+  </div>
+</section>
+
+    
+<section class="sections" id="hreports" >
+  <h2>Reports</h2>
+  <div class="report-list">
+    <ul>
+      <li>
+        <span class="report-name">Monthly Transactions</span>
+        <button class="view-report">View Report</button>
+      </li>
+      <li>
+        <span class="report-name">Yearly Financial Summary</span>
+        <button class="view-report">View Report</button>
+      </li>
+      <!-- Add more report list items as needed -->
+    </ul>
+  </div>
+</section>
+
+    
+<section class="sections" id="hloan">
+  <h2>Loan Requests</h2>
+  <div class="loan-list">
+    <ul>
+      <li>
+        <span class="loan-id">#123456</span>
+        <span class="loan-amount">$10,000</span>
+        <span class="loan-status">Pending</span>
+        <button class="view-details">View Details</button>
+      </li>
+      <li>
+        <span class="loan-id">#789012</span>
+        <span class="loan-amount">$5,000</span>
+        <span class="loan-status">Approved</span>
+        <button class="view-details">View Details</button>
+      </li>
+      <!-- Add more loan list items as needed -->
+    </ul>
+  </div>
+</section>
+
+    
+<section class="sections" id="hcustomer-support" >
+  <h2>Customer Support</h2>
+  <div class="customer-support-form">
+    <h3>Contact Customer Support</h3>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Enter your message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+    
+<section class="sections" id="haccount-settings" >
+  <h2>Account Settings</h2>
+  <div class="account-info">
+    <h3>Account Information</h3>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password">
+      <button type="submit">Save Changes</button>
+    </form>
+  </div>
+  <div class="account-options">
+    <h3>Account Options</h3>
+    <ul>
+      <li>Change Password</li>
+      <li>Enable Two-Factor Authentication</li>
+      <li>Close Account</li>
+    </ul>
+  </div>
+</section>
+
+  </main>
+  
+  <footer>
+    <p>Banker Dashboard &copy; 2023</p>
+  </footer>
+  <script src="jfile.js"></script>
+</body>
+</html>

@@ -1,0 +1,403 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+
+/* ---- Base Rules ---- */
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Merriweather", Arial;
+  color: #fff;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  align-items: center;
+  flex: 1;
+}
+.logo {
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+/* Typeography General*/
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  margin: 2em 1rem;
+}
+
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 7em;
+    margin: 2em 4rem 1em;
+  }
+}
+
+h2 {
+  border-bottom: 1px solid orange;
+  font-family: Sans-Serif;
+  font-size: 3em;
+  color: black;
+}
+
+/* ---- Layout Rules ---- */
+main {
+  width: 100%;
+}
+
+section {
+  position: relative;
+  min-height: 80vh;
+}
+#icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+#iconItem:hover {
+  transform: scale(1.2);
+  background-color: rgb(235, 235, 235);
+}
+#section0 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding-top: 5%;
+}
+#section0text h5 {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+#section0text h3 {
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing: 3px;
+}
+#section0text h4 {
+  font-size: 22px;
+}
+#iconItem {
+  width: 15%;
+  background-color: white;
+  border: #000 2px solid;
+  border-top: navy 10px solid;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  padding: 20px 20px;
+}
+#iconItem h3 {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+
+#navbar__list {
+  padding-left: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.navbar__menu li {
+  text-decoration: none;
+  display: inline-block;
+}
+.navbar__menu li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+}
+.navbar__menu li.active {
+  background-color: silver;
+  border-radius: 3px;
+  color: black;
+}
+
+.navbar__menu .menu__link {
+  display: block;
+  padding: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar__menu .menu__link:hover {
+  background: #333;
+  color: #fff;
+  transition: ease 0.3s all;
+}
+
+/* Header Styles */
+.page__header {
+  background: navy;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_hero {
+  color: white;
+  min-height: 82vh;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(landingPhoto.jpg);
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: bottom 45% center;
+}
+#main-text-wrapper {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  margin-left: 10%;
+}
+#main-text-wrapper h1 {
+  max-width: 1000px;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: left;
+  margin: 0;
+}
+#main-text-wrapper p {
+  max-width: 350px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Arial;
+  width: 100%;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  justify-content: center;
+}
+#navButtons {
+  margin-left: 10px;
+  background-color: navy;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 18px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 16px;
+}
+#navButtons:hover {
+  background-color: rgb(190, 208, 214);
+  color: navy;
+  cursor: pointer;
+}
+/* Footer Styles */
+.page__footer {
+  background: navy;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  justify-content: center;
+}
+
+.page__footer span {
+  flex: 1;
+  margin: auto;
+}
+.page__footer span img:hover {
+  cursor: pointer;
+}
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+#subSections {
+  border-bottom: orange 5px solid;
+  border-radius: 8px;
+  padding: 1% 2%;
+  margin: 2%;
+  box-shadow: 0 2px 5px black;
+  line-height: 1.8;
+}
+#subSections h3 {
+  font-size: 25px;
+  border-bottom: orange 1px solid;
+}
+#aboutUs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#deal {
+  flex: 1;
+  margin: auto 2% auto;
+  padding-top: 5%;
+}
+#text-container {
+  flex: 2;
+  padding: 2%;
+}
+
+#text-container h2,
+h3 {
+  color: navy;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 35em) {
+  .landing__container {
+    max-width: 50em;
+    padding: 4em;
+  }
+}
+
+section {
+  background-color: aliceblue;
+  color: black;
+}
+
+#address-wrapper {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+#address-information {
+  width: 50%;
+  font-size: 20px;
+}
+#contact {
+  width: 40%;
+}
+
+form {
+  display: block;
+  margin-top: 0;
+}
+form input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: black;
+  border-radius: 6px;
+  border: 1px solid #e5e6ec;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+#address-information p:first-child {
+  color: navy;
+  font-size: 34px;
+  font-family: "Caveat", Arial;
+  margin: 20px 0;
+  border-bottom: 4px solid orange;
+  border-radius: 5px;
+}
+#contact p:first-child {
+  font-size: 24px;
+  font-family: "Caveat", Arial;
+  margin-top: 80px;
+}
+#address-wrapper h3 {
+  font-size: 34px;
+  margin: 0;
+}
+#address-wrapper p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #8b8b99;
+  letter-spacing: 0.5px;
+}
+#address-wrapper h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 32px;
+}
+.input-box {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: #8b8b99;
+  border-radius: 6px;
+  border: 1px solid #e5e6ec;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+#Submit {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: navy;
+  padding: 9px 34px;
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 4px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: green;
+}
+#map {
+  height: 400px;
+  width: 100%;
+  margin-top: 10%;
+}
+#address-wrapper #validation {
+    font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  font-size: 18px;
+  margin: 0;
+}

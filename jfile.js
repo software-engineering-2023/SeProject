@@ -30,10 +30,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Retrieve the value from the search input
     const searchText = inputBox.value.trim();
-
+    let substrings = [];
+    word="mohamed";
+    for (let i = 0; i < word.length; i++) {
+      for (let j = i + 1; j <= word.length; j++) {
+        let substring = word.slice(i, j);
+        substrings.push(substring);
+      }
+    }
     // Check if the search text is equal to "mohamed"
-    if (searchText.toLowerCase() === 'mohamed') {
+    if (substrings.includes(searchText)) {
       searchResults.classList.remove('hidden'); // Show the search results
+    }
+    else{
+      searchResults.classList.add('hidden'); 
     }
   });
 });
@@ -64,7 +74,9 @@ const question1 = document.getElementById('question1');
 
 submit1.addEventListener('click', function(event) {
   event.preventDefault(); 
+  if (reply1.value !== '') {
   question1.classList.add('hidden');
+  }
 });
 
 
@@ -76,5 +88,13 @@ reply2.addEventListener('input', function() {
     submit2.classList.add('active');
   } else {
     submit2.classList.remove('active');
+  }
+});
+const question2 = document.getElementById('question1');
+
+submit2.addEventListener('click', function(event) {
+  event.preventDefault(); 
+  if (reply2.value !== '') {
+    question2.classList.add('hidden');
   }
 });

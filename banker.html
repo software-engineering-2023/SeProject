@@ -16,6 +16,7 @@
 
   <nav>
     <ul class="list">
+      <li><a href="#dashboard" onclick="toggleSection('hdashboard')">Dashboard</a></li>
       <li><a href="#customer-management" onclick="toggleSection('hcustomer-management')">Customer Management</a></li>
       <li><a href="#reports" onclick="toggleSection('hreports')">Reports</a></li>
       <li><a href="#loan-requests" onclick="toggleSection('hloan')">Loan Requests</a></li>
@@ -25,8 +26,123 @@
   </nav>
 
   <main>
-
-    <section class="sections" id="hcustomer-management">
+    <section class="sections dashboard" id="hdashboard" >
+      <div class="performance">
+          <h2>Performance Summary</h2>
+          <div class="performance-summary">
+              <div class="kpi">
+                  <h3>Accounts Opened</h3>
+                  <p>256</p>
+              </div>
+              <div class="kpi">
+                  <h3>Loan Approvals</h3>
+                  <p>120</p>
+              </div>
+              <div class="kpi">
+                  <h3>Revenue Generated</h3>
+                  <p>$356,780</p>
+              </div>
+              <div class="kpi">
+                  <h3>Customer Satisfaction</h3>
+                  <p>89%</p>
+              </div>
+          </div>
+      
+      </div>
+      <div class="notifications">
+          <h2>Notifications and Alerts</h2>
+          <ul class="notification-list">
+              <li>
+                  <span class="notification-type">Task</span>
+                  <span class="notification-message">Review loan application for John Smith</span>
+              </li>
+              <li>
+                  <span class="notification-type">Alert</span>
+                  <span class="notification-message">Urgent customer request received</span>
+              </li>
+              <li>
+                  <span class="notification-type">Notification</span>
+                  <span class="notification-message">System maintenance scheduled for tomorrow</span>
+              </li>
+          </ul>
+      </div>
+      <div class="customer-insights">
+          <h2>Customer Insights</h2>
+          <div class="customer-summary">
+              <div class="insight">
+                  <h3>Total Customers</h3>
+                  <p>2,500</p>
+              </div>
+              <div class="insight">
+                  <h3>Average Account Balance</h3>
+                  <p>$10,000</p>
+              </div>
+              <div class="insight">
+                  <h3>Customer Segments</h3>
+                  <p>3</p>
+              </div>
+              <div class="insight">
+                  <h3>Customer Lifetime Value</h3>
+                  <p>$50,000</p>
+              </div>
+          </div>
+      </div>
+      <div class="recent-activities">
+          <h2>Recent Activities</h2>
+          <ul class="activity-list">
+              <li>
+                  <span class="activity-date">May 15, 2023</span>
+                  <span class="activity-description">Meeting with client: John Smith</span>
+              </li>
+              <li>
+                  <span class="activity-date">May 14, 2023</span>
+                  <span class="activity-description">Completed loan application for Sarah Johnson</span>
+              </li>
+              <li>
+                  <span class="activity-date">May 12, 2023</span>
+                  <span class="activity-description">Followed up with customer inquiries</span>
+              </li>
+          </ul>
+      </div>
+      
+      <div class="calendar">
+          <h2>Calendar and Appointments</h2>
+          <div id="calendar"></div>
+      </div>
+      <div class="news-updates">
+          <h2>News and Updates</h2>
+          <ul class="news-list">
+              <li>
+                  <span class="news-date">May 18, 2023</span>
+                  <span class="news-title">New Banking Regulations Announced</span>
+                  <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae mauris lectus. Donec ac sem sit amet odio condimentum mattis. Fusce suscipit aliquam lorem quis tincidunt.</p>
+              </li>
+              <li>
+                  <span class="news-date">May 16, 2023</span>
+                  <span class="news-title">Banking Technology Innovation Conference</span>
+                  <p class="news-description">In hac habitasse platea dictumst. Vestibulum ac ante massa. Sed nec dignissim libero. Aliquam luctus ipsum id velit commodo euismod.</p>
+              </li>
+          </ul>
+      </div>
+      
+      <div class="personalized-messages">
+          <h2>Personalized Messages</h2>
+          <div class="message-container">
+              <div class="message">
+                  <span class="message-sender">John Doe</span>
+                  <span class="message-date">May 17, 2023</span>
+                  <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae mauris lectus. Donec ac sem sit amet odio condimentum mattis.</p>
+              </div>
+              <div class="message">
+                  <span class="message-sender">Jane Smith</span>
+                  <span class="message-date">May 15, 2023</span>
+                  <p class="message-content">In hac habitasse platea dictumst. Vestibulum ac ante massa. Sed nec dignissim libero.</p>
+              </div>
+          </div>
+      </div>
+      
+  </section>
+    <section class="sections hidden" id="hcustomer-management">
       <div class="customer-search">
         <h2>Search Customers</h2>
         <form>
@@ -151,7 +267,7 @@
       </div>
     </section>
 
-    <section class="sections" id="hreports">
+    <section class="sections hidden" id="hreports">
       <h2>Reports</h2>
       <div class="report-list">
         <ul>
@@ -169,7 +285,7 @@
     </section>
 
 
-    <section class="sections" id="hloan">
+    <section class="sections hidden" id="hloan">
       <h2>Loan Requests</h2>
       <div class="loan-list">
         <ul>
@@ -191,7 +307,7 @@
     </section>
 
 
-    <section class="sections" id="hcustomer-support">
+    <section class="sections hidden" id="hcustomer-support">
       <h2>Customer Support</h2>
       <div class="customer-support-form">
         <h3>Contact Customer Support</h3>
@@ -208,7 +324,7 @@
     </section>
 
 
-    <section class="sections" id="haccount-settings">
+    <section class="sections hidden" id="haccount-settings">
       <h2>Account Settings</h2>
       <div class="account-info">
         <h3>Account Information</h3>

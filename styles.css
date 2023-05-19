@@ -93,6 +93,249 @@ h1, h2 {
 section {
   margin-bottom: 20px;
 }
+
+
+.performance {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.notifications {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sales-targets {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.customer-insights {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.recent-activities {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.calendar {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news-updates {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.personalized-messages {
+  background-color: #fff;
+  padding: 20px;
+}
+.performance {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.performance h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.performance-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.performance-summary .kpi {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+}
+
+.performance-summary .kpi h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.performance-summary .kpi p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.notifications {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.notifications h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.notification-list {
+  list-style-type: none;
+}
+
+.notification-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.notification-type {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.notification-message {
+  color: #666;
+}
+.customer-insights {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.customer-insights h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.customer-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.customer-summary .insight {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+}
+
+.customer-summary .insight h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.customer-summary .insight p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.recent-activities {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.recent-activities h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.activity-list {
+  list-style-type: none;
+}
+
+.activity-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.activity-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.activity-description {
+  color: #666;
+}
+.calendar {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.calendar h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#calendar {
+  /* Add custom styles or apply a library for a calendar component */
+}
+.news-updates {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news-updates h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-list {
+  list-style-type: none;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+}
+
+.news-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-description {
+  color: #666;
+}
+.personalized-messages {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.personalized-messages h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.message-container {
+  margin-top: 10px;
+}
+
+.message {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.message-content {
+  margin-top: 5px;
+  color: #666;
+}
+#calendar {
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
 /* Account Summary Styles */
 #customer-management {
   padding: 20px;

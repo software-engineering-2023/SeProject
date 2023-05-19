@@ -49,4 +49,35 @@ function viewd(sectionId) {
     }
   }
 }
+$(document).ready(function() {
+  $('#calendar').fullCalendar({
+      // Calendar Options
+      header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,agendaDay'
+      },
+      defaultView: 'month',
+      editable: true,
+      eventLimit: true,
+      events: [
+          // Calendar Events
+          {
+              title: 'Meeting',
+              start: '2023-05-19T10:00:00',
+              end: '2023-05-19T11:30:00',
+              backgroundColor: '#ff9f89',
+              borderColor: '#ff9f89'
+          },
+          {
+              title: 'Conference',
+              start: '2023-05-22',
+              end: '2023-05-24',
+              backgroundColor: '#79c6f0',
+              borderColor: '#79c6f0'
+          },
+          // Add more events here...
+      ]
+  });
+});
 

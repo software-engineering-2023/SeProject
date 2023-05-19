@@ -70,13 +70,14 @@ main {
   color: navy;
 }
 #footer{
-  position: relative;
   margin: 0;
-  padding: 0;
 }
 
 footer {
   position: fixed;
+  height:25px;
+  left: 0;
+  bottom: 0;
   width: 100%;
   background-color: navy;
   color: white;

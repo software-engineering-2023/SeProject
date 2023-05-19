@@ -252,19 +252,7 @@ section {
 .activity-description {
   color: #666;
 }
-.calendar {
-  background-color: #fff;
-  padding: 20px;
-}
 
-.calendar h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-#calendar {
-  /* Add custom styles or apply a library for a calendar component */
-}
 .news-updates {
   background-color: #fff;
   padding: 20px;
@@ -330,10 +318,6 @@ section {
 .message-content {
   margin-top: 5px;
   color: #666;
-}
-#calendar {
-  font-family: Arial, sans-serif;
-  width: 100%;
 }
 
 /* Account Summary Styles */

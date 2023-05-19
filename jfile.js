@@ -49,3 +49,32 @@ function viewd(sectionId) {
     }
   }
 }
+
+const reply1 = document.getElementById('reply1');
+const submit1 = document.getElementById('submit1');
+
+reply1.addEventListener('input', function() {
+  if (reply1.value !== '') {
+    submit1.classList.add('active');
+  } else {
+    submit1.classList.remove('active');
+  }
+});
+const question1 = document.getElementById('question1');
+
+submit1.addEventListener('click', function(event) {
+  event.preventDefault(); 
+  question1.classList.add('hidden');
+});
+
+
+const reply2 = document.getElementById('reply2');
+const submit2 = document.getElementById('submit2');
+
+reply2.addEventListener('input', function() {
+  if (reply2.value !== '') {
+    submit2.classList.add('active');
+  } else {
+    submit2.classList.remove('active');
+  }
+});

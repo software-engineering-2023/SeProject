@@ -573,7 +573,7 @@ tr:hover {
 }
 
 .loan-list li {
-  display: flex;
+  display: fixed;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
@@ -605,6 +605,67 @@ tr:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#submit1.active {
+  background-color: rgb(76, 187, 23);
+}
+
+#submit2.active {
+  background-color: rgb(76, 187, 23);
+}
+
+/* Styles for loan details section */
+.loan-details {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.loan-details h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for loan information */
+.loan-info {
+  margin-bottom: 20px;
+}
+
+.loan-info h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.loan-info p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.loan-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loan-info a:hover {
+  text-decoration: underline;
+}
+
+.loan-info p.loan-amount {
+  font-weight: bold;
+}
+
+.loan-info p.loan-status {
+  color: green;
+}
+
+.loan-info p.collateral {
+  font-style: italic;
+}
+
+
+
 /* Customer Support Styles */
 #customer-support {
   padding: 20px;
@@ -614,7 +675,7 @@ tr:hover {
   margin-bottom: 20px;
 }
 
-.customer-support-form h3 {
+.customer-support-form h2 {
   margin-top: 0;
 }
 
@@ -648,6 +709,67 @@ tr:hover {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.customer-support-questions {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.customer-support-questions h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h4 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reply-form form {
+  margin-top: 10px;
+}
+
+.reply-form label {
+  color: #555;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reply-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reply-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reply-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
 /* Account Settings Styles */
 #account-settings {
   padding: 20px;

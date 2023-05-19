@@ -9,8 +9,6 @@ body {
   display: none;
 }
 
-
-
 header{
   position: relative;
   padding-top:20px;
@@ -376,7 +374,7 @@ section {
   border-bottom: 1px solid #ccc;
 }
 
-#listitems{
+.listitems{
   display:flex;
   justify-content: space-between;
   text-align: center;
@@ -497,13 +495,19 @@ section {
   padding: 20px;
 }
 
+.reportss{
+  text-align: center;
+  display:flex;
+  justify-content: space-between;
+}
+
 .report-list ul {
   list-style-type: none;
   padding: 0;
 }
 
 .report-list li {
-  display: flex;
+  display: fixed;
   align-items: center;
   justify-content: space-between;
   padding: 10px 0;
@@ -526,6 +530,38 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.report {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e3e3e3;
+}
+
 /* Loan Styles */
 #loan {
   padding: 20px;

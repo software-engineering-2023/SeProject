@@ -9,6 +9,8 @@ body {
   display: none;
 }
 
+
+
 header{
   position: relative;
   padding-top:20px;
@@ -69,8 +71,15 @@ main {
   background-color: white;
   color: navy;
 }
+#footer{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
 
 footer {
+  position: fixed;
+  width: 100%;
   background-color: navy;
   color: white;
   text-align: center;
@@ -90,22 +99,27 @@ section {
 }
 
 .customer-search {
+  position: relative;
   margin-bottom: 20px;
 }
 
-.customer-search h3 {
-  margin-top: 0;
+.customer-search h2 {
+  padding-top: 12px;
 }
 
 .customer-search form {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .customer-search input[type="text"] {
   padding: 10px;
   width: 250px;
-  border: none;
+  border: 1px solid navy;
   border-radius: 5px;
 }
 
@@ -119,17 +133,26 @@ section {
   cursor: pointer;
 }
 
+#myButton.active {
+  background-color: rgb(76, 187, 23);
+}
+
 .customer-list ul {
   list-style-type: none;
   padding: 0;
 }
 
 .customer-list li {
-  display: flex;
-  align-items: center;
+  display: fixed;
   justify-content: space-between;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
+}
+
+#listitems{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .customer-list li:last-child {
@@ -153,6 +176,95 @@ section {
   border-radius: 5px;
   cursor: pointer;
 }
+
+#details1 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top:20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#details1 h3 {
+  margin-bottom: 10px;
+}
+
+#details1 p {
+  margin: 0;
+}
+
+#details1 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details1 li {
+  margin-bottom: 5px;
+}
+
+#details1 strong {
+  font-weight: bold;
+}
+
+#details2 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#details2 h3 {
+  margin-bottom: 10px;
+}
+
+#details2 p {
+  margin: 0;
+}
+
+#details2 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details2 li {
+  margin-bottom: 5px;
+}
+
+#details2 strong {
+  font-weight: bold;
+}
+
+#details3 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#details3 h3 {
+  margin-bottom: 10px;
+}
+
+#details3 p {
+  margin: 0;
+}
+
+#details3 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details3 li {
+  margin-bottom: 5px;
+}
+
+#details3 strong {
+  font-weight: bold;
+}
+
 /* Transaction History Styles */
 #transaction-history {
   padding: 20px;

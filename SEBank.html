@@ -4,20 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Banking App</title>
+  <title>SE Online Banking</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>
-        <img src="C:\Users\Mazen\Desktop\logo.png"alt="logo"> </h1>
+        <img src="logo.png"alt="logo" width="150px" height="80px"> </h1>
         <hq>Welcome to SE Online Banking Website</hq>
     </header>
-  <div class="container">
-    
-    <!-- User Story 1: Apply for a loan -->
-    <div class="loan">
-      <h2>Apply for a Loan</h2>
+    <nav>
+      <ul class="list">
+        <li ><a href="#loan1" onclick="toggleSection('loans')">Apply for a Loan</a></li>
+        <li ><a href="#bank-transactions1" onclick="toggleSection('bank-transaction')">Bank Account Transactions</a></li>
+        <li ><a href="#credit-card-transactions1" onclick="toggleSection('credit-card-transactions')">Credit Card Transactions</a></li>
+        <li ><a href="#credit-card-points1" onclick="toggleSection('points')">view points</a></li>
+        <li ><a href="#credit-card-bill1" onclick="toggleSection('bill-amount')">view bill amount</a></li>
+    </ul>
+      </nav>
+    <main>
+    <div class="section" id="loans">
+    <h2>Apply For a Loan</h2>
+     <div class="loan">
       <form>
         <label for="loan-type">Loan Type:</label>
         <select id="loan-type">
@@ -26,36 +34,70 @@
         </select>
         <button type="submit">Apply</button>
       </form>
+     </div>
     </div>
-
     <!-- User Story 2: View bank account transactions -->
-    <div class="bank-transactions">
-      <h2>Bank Account Transactions</h2>
-      <button id="view-bank-transactions">View Transactions</button>
-      <table id="bank-transactions-table">
-        <!-- transaction data will be dynamically populated here using JavaScript -->
-      </table>
+    <div class="section" id="bank-transaction">
+     <ha1>Transactions</ha1>    
+     <div class="bank-transactions">
+      <ul>
+        <li>
+          <span class="date">2023-04-26</span>
+          <span class="type">Deposit</span>
+          <span class="amount">+ $250.00</span>
+        </li>
+        <li>
+          <span class="date">2023-05-01</span>
+          <span class="type">Deposit</span>
+          <span class="amount">+ $700.00</span>
+        </li>
+        <li>
+          <span class="date">2023-05-03</span>
+          <span class="type">Withdrawal</span>
+          <span class="amount">- $300.00</span>
+        </li>
+        <li>
+          <span class="date">2023-05-07</span>
+          <span class="type">Deposit</span>
+          <span class="amount">+ $400.00</span>
+        </li>
+        
+      </ul>
+      
+      
     </div>
-
-    <!-- User Story 3: View credit card transactions -->
+  </div>
+    <div class="section" id="credit-card-transactions">
     <div class="credit-card-transactions">
-      <h2>Credit Card Transactions</h2>
-      <button id="view-credit-card-transactions">View Transactions</button>
-      <table id="credit-card-transactions-table">
-        <!-- transaction data will be dynamically populated here using JavaScript -->
-      </table>
+      <ul>
+        <li>
+          <span class="date">2023-03-15</span>
+          <span class="Dest">Zara</span>
+          <span class="amount"> $200.00</span>
+        </li>
+        <li>
+          <span class="date">2023-04-07</span>
+          <span class="Dest">H&M</span>
+          <span class="amount"> $199.50</span>
+        </li>
+        <li>
+          <span class="date">2023-05-29</span>
+          <span class="Dest">Zara</span>
+          <span class="amount"> $50.00</span>
+        </li> 
+     
     </div>
-
-    <!-- User Story 4: View credit card points and redeem them -->
+  </div>
+    <div class="section" id="points">
     <div class="credit-card-points">
-      <h2>Credit Card Points</h2>
       <p>Total Points: <span id="credit-card-points">0</span></p>
       <button id="redeem-cashback">Redeem Cashback</button>
+      
     </div>
+    </section>
 
-    <!-- User Story 5: Pay credit card bill -->
+    <section class="bills" id="bill-amount">
     <div class="credit-card-bill">
-      <h2>Credit Card Bill Payment</h2>
       <form>
         <label for="bill-amount">Bill Amount:</label>
         <input type="number" id="bill-amount" step="0.01" min="0" required>
@@ -63,6 +105,7 @@
       </form>
     </div>
   </div>
+    </main>
 
   <script src="script.js"></script>
 </body>

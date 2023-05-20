@@ -1,5 +1,5 @@
 <!DOCTYPE >
-<html lang="en">
+<html lang="en" >
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
     <!-- Load Styles -->
     <link href="styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body onload="generate()"> 
     <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
     <header class="page__header">
@@ -111,12 +111,20 @@
                 <p> </p>
                 <h3>Get In Touch</h3>
                 <p> </p>
-                <form  id="myForm">
+                <form  id="myForm" ">
                   <input type="text" placeholder="Name" required>
                   <input type="text" placeholder="Phone" required>
                   <input type="text" placeholder="Subject" required>
                   <input type="email" placeholder="E-mail" required>
                   <textarea class="input-box" spellcheck="true" required placeholder="Message"></textarea>
+                  <div class="captcha-container">
+                    <div id="captchaCode" selectable="False"></div>
+                    <div id="regenerateIcon" onclick="generate()">
+                      <img src="regenerate.png" height="50px" width="50px"/>
+                    </div>
+                  </div>
+                    <input id="captcha" type="text" required placeholder="Captcha Code"></input>
+          
                   <input id="Submit" type="submit" value="Submit Now">
                  
                 </form>

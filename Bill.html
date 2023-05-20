@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE Online Banking</title>
+  <link rel="stylesheet" href="Bill.css">
+</head>
+<body>
+    <header>
+        <h1>
+        <img src="logo.png"alt="logo" width="150px" height="80px"> </h1>
+        <hq>Welcome to SE Online Banking Website</hq>
+    </header>
+    <div class="credit-card-bill">
+        <form>
+            <h2>Pay Your Bills Easily From Here</h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>Issuance Date</th>
+                    <th>Amount</th>
+                    <th>Pay Fully</th>
+                    <th>Pay Partially</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2023-02-04</td>
+                    <td><ha>$200</ha></td>
+                    <td><button id="b1p">Pay</button></td>
+                    <td>Amount:<input type="number" id="amount1" step="0.01" min="10" max="200"><button id="b1">Pay</button></td>
+                  </tr>
+                  <tr>
+                    <td>2023-05-24</td>
+                    <td><ha>$550</ha></td>
+                    <td><button id="b2p">Pay</button></td>
+                    <td>Amount:<input type="number" id="amount2" step="0.01" min="10" max="550"><button id="b2">Pay</button></td>
+                  </tr>
+                
+                </tbody>
+              </table>
+      
+        </form>
+      </div>
+      <footer>
+        <p>Banker Dashboard &copy; 2023</p>
+      </footer>
+      <script src="Bill.js"></script>
+</body>
+</html>

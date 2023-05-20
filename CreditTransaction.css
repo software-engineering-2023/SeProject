@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  header{
+    position: relative;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom: 1px solid white;
+  }
+  header img{
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h1{
+      padding:15px;
+      padding-left:20px;
+  }
+  
+  nav, main {
+    padding: 20px;
+  }
+  p{
+    background-color: navy;
+    padding: 20px;
+    padding-left: 516px;
+    margin: 0;
+    
+    
+    
+    color: white;
+    position:absolute;
+    
+    width:1000px;
+    bottom: 0;
+  }
+  
+  nav ,header{
+    width: 1000;
+    background-color: navy;
+    color: white;
+  }
+  main {
+    margin-left: 20px;
+    background-color: white;
+    color: navy;
+  }
+  .credit-card-transactions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .credit-card-transactions li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .credit-card-transactions li:last-child {
+    border-bottom: none;
+  }
+  
+  .credit-card-transactions .date {
+    font-weight: bold;
+    color: navy;
+  }
+  
+  .credit-card-transactions .Dest {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: navy;
+    
+  }
+  
+  .credit-card-transactions .amount {
+    color: #980000;
+  }
+  he{
+    color: navy;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  

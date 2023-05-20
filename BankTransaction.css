@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hidden{
+    display: none;
+  }
+  
+  header{
+    position: relative;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom: 1px solid white;
+  }
+  header img{
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  h1{
+      padding:15px;
+      padding-left:20px;
+  }
+  
+  nav, main {
+    padding: 20px;
+  }
+  p{
+    background-color: navy;
+    padding: 20px;
+    padding-left: 516px;
+    margin: 0;
+    
+    
+    
+    color: white;
+    position:absolute;
+    
+    width:1000px;
+    bottom: 0;
+  }
+  
+  nav ,header{
+    width: 1000;
+    background-color: navy;
+    color: white;
+  }
+  main {
+    margin-left: 20px;
+    background-color: white;
+    color: navy;
+  }
+  bank-transactions ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .bank-transactions li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .bank-transactions li:last-child {
+    border-bottom: none;
+  }
+  
+  .bank-transactions .date {
+    font-weight: bold;
+    color: navy;
+  }
+  
+  .bank-transactions .type {
+    flex-grow: 1;
+    margin-left: 20px;
+    color: navy;
+  }
+  ha1{
+    color: navy;
+    font-size:x-large;
+    font-weight: bold;
+  }
+  
+  .bank-transactions .amount {
+    color: #777;
+  }
+  

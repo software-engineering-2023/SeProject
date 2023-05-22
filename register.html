@@ -36,38 +36,38 @@
         <div class="sidebar">
           <div class="sidebarItem">
             <div class="step">
-              <i class="bi bi-1-circle active"></i>
+              <i class="bi bi-1-circle active" id="one"></i>
             </div>
             <div class="stepDesc">
               Step 1 <br />
-              <b>Your info</b>
+              <b>Personal information</b>
             </div>
           </div>
           <div class="sidebarItem">
             <div class="step">
-              <i class="bi bi-2-circle"></i>
+              <i class="bi bi-2-circle" id="two"></i>
             </div>
             <div class="stepDesc">
               Step 2 <br />
-              <b>Select plan</b>
+              <b>Upload Official Documents</b>
             </div>
           </div>
           <div class="sidebarItem">
             <div class="step">
-              <i class="bi bi-3-circle"></i>
+              <i class="bi bi-3-circle" id="three"></i>
             </div>
             <div class="stepDesc">
               Step 3 <br />
-              <b>Add-ons</b>
+              <b>Set Login Credentials</b>
             </div>
           </div>
           <div class="sidebarItem">
             <div class="step">
-              <i class="bi bi-4-circle"></i>
+              <i class="bi bi-4-circle" id="four"></i>
             </div>
             <div class="stepDesc">
               Step 4 <br />
-              <b>Summary</b>
+              <b>Summary & Verfication</b>
             </div>
           </div>
         </div>
@@ -75,32 +75,8 @@
           <div class="form visible" id="step1">
             <div class="title">Personal info</div>
             <div class="instructions">
-              Please provide your name, email address, and phone number.
-            </div>
-            <div class="formInputs">
-              <form novalidate>
-                Name
-                <input type="text" required placeholder="e.g. Stephen King" />
-                Email Address
-                <input
-                  type="email"
-                  required
-                  placeholder="e.g. Stephenking@lorem.com"
-                />
-                Phone Number
-                <input type="text" placeholder="e.g. +1 234 567 890" />
-                National ID/ Passport No.
-                <input type="text" placeholder="Official Document ID" />
-                <button type="button" onclick="nextStep('step1', 'step2')">
-                  Next Step
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="form" id="step2">
-            <div class="title">Personal info</div>
-            <div class="instructions">
-              Please provide your name, email address, and phone number.
+              Please provide your name, email address, phone number, and
+              Official ID.
             </div>
             <div class="formInputs">
               <form>
@@ -113,10 +89,51 @@
                   placeholder="e.g. Stephenking@lorem.com"
                 />
                 Phone Number
-                <input type="text" placeholder="e.g. +1 234 567 890" />
-                National ID/ Passport No.
-                <input type="text" placeholder="Official Document ID" />
-                <button type="submit" onclick="nextStep('step2', 'step3')">
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g. +1 234 567 890"
+                  pattern="\+[0-9]*"
+                  oninvalid="this.setCustomValidity('Please enter valid number starting with + and including numbers only !')"
+                  oninput="this.setCustomValidity('')"
+                />
+                National ID/ Passport Number
+                <input
+                  type="text"
+                  placeholder="Official Document ID"
+                  required
+                  pattern="[0-9]*"
+                  oninvalid="this.setCustomValidity('Please enter numbers only!')"
+                  oninput="this.setCustomValidity('')"
+                />
+                <button type="button" onclick="nextStep('step1', 'step2')">
+                  Next Step
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step2">
+            <div class="title">Required Documents</div>
+            <div class="instructions">
+              Please upload your National ID Front/Back.
+            </div>
+            <div class="formInputs">
+              <form>
+                Front of National ID
+                <input
+                  type="file"
+                  required
+                  placeholder="Upload the front of your National ID"
+                  accept="image/*"
+                />
+                Back of National ID
+                <input
+                  type="file"
+                  required
+                  placeholder="Upload the Back of your National ID"
+                  accept="image/*"
+                />
+                <button type="button" onclick="nextStep('step2', 'step3')">
                   Next Step
                 </button>
                 <button
@@ -124,6 +141,77 @@
                   type="button"
                   onclick="backStep('step2', 'step1')"
                 >
+                  Go Back
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step3">
+            <div class="title">Login Credentials</div>
+            <div class="instructions">Please choose username and password.</div>
+            <div class="formInputs">
+              <form>
+                Username
+                <input type="text" required placeholder="username" />
+                Password
+                <input
+                  type="password"
+                  id="password"
+                  required
+                  placeholder="password"
+                />
+                Confirm Password
+                <input
+                  type="password"
+                  required
+                  id="confirmPassword"
+                  placeholder="re-enter chosen password"
+                />
+                <div id="passwordError" style="color: red"></div>
+                <button
+                  type="button"
+                  onclick="validatePasswords('step3', 'step4')"
+                >
+                  Next Step
+                </button>
+                <button
+                  id="back"
+                  type="button"
+                  onclick="backStep('step3', 'step2')"
+                >
+                  Go Back
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step4">
+            <div class="title">Confirmation</div>
+            <div class="instructions">
+              Please review the information and confirm your registration.
+            </div>
+            <div class="formInputs">
+              <form>
+                <div id="confirmation">
+                  <strong>Name:</strong> <span id="name"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>Email Address:</strong> <span id="email"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>Phone Number:</strong> <span id="phone"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>National ID:</strong> <span id="nationalId"></span>
+                </div>
+                <div id="confirmation">
+                  <input type="checkbox" required id="termsCheckbox" />
+                  <label for="termsCheckbox"
+                    >I hereby confirm that all information given above is true
+                    and complete.</label
+                  >
+                </div>
+                <button type="button" onclick="submitForm()">Confirm</button>
+                <button type="button" onclick="backStep('step4', 'step3')">
                   Go Back
                 </button>
               </form>

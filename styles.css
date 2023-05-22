@@ -483,5 +483,90 @@ input {
   margin: auto;
   margin-bottom: 16px;
   box-sizing: border-box;
-  
+}
+#login {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(login.png);
+  background-size: cover;
+  background-position: right 10% center;
+  width: 100%;
+  background-repeat: co;
+}
+#loginContainer {
+  width: 20%;
+  border-top: 5px orange solid;
+  border-bottom: 5px orange solid;
+  border-radius: 5px;
+  padding: 2% 3%;
+  margin: 2%;
+  margin-top: 10%;
+  background-color: whitesmoke;
+}
+#loginFrom label {
+  font-size: 16px;
+  font-weight: bold;
+}
+#loginFrom input {
+  margin-top: 5px;
+  height: 25px;
+}
+#loginFrom #Submit{
+    height: 35px;
+    font-size: 14px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30vw;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-bottom: 10px navy solid;
+  border-radius: 10px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.popup input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.popup button {
+  padding: 10px 20px;
+  background-color: navy;
+  font-size: 15px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 0 40%;
+  align-self: center;
 }

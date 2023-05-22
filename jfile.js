@@ -98,3 +98,31 @@ submit2.addEventListener('click', function(event) {
     question2.classList.add('hidden');
   }
 });
+const name1 = document.getElementById('username');
+const email1 = document.getElementById('email');
+const password1 = document.getElementById('password');
+const savechanges = document.getElementById('savechanges');
+
+name1.addEventListener('input', function() {
+  if (name1.value !== '' && email1.value !== '' && password1.value !== '') {
+    savechanges.classList.add('active');
+  } else {
+    savechanges.classList.remove('active');
+  }
+});
+
+email1.addEventListener('input', function() {
+  if (name1.value !== '' && email1.value !== '' && password1.value !== '') {
+    savechanges.classList.add('active');
+  } else {
+    savechanges.classList.remove('active');
+  }
+});
+
+password1.addEventListener('input', function() {
+  if (name1.value !== '' && email1.value !== '' && password1.value !== '') {
+    savechanges.classList.add('active');
+  } else {
+    savechanges.classList.remove('active');
+  }
+});

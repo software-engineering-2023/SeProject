@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  table {
+    width: 98%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: black;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: center; /* Updated to align text in the middle */
+    border: 1px solid black; /* Updated to make border lines black */
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Added to make headers bold */
+  }
+  
+  button {
+    padding: 6px 12px;
+    margin-right: 5px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  
+  .select {
+    padding: 6px 12px;
+    margin-right: 5px;
+  }
+  
+  #resolve-reply-form {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  button:disabled{
+    border: 1px solid gray;
+    color: gray;
+  }
+  .page__footer#reports{
+    background: navy;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 81%;
+  }
+  
+  .page__footer span {
+    flex: 1;
+    margin: auto;
+  }
+  .page__footer span img:hover {
+    cursor: pointer;
+  }
+  .form {
+    margin: auto;
+    width: 70%;
+  }
+  .title {
+    font-weight: bolder;
+    color: navy;
+    font-size: xx-large;
+    letter-spacing: 1px;
+  }
+  .instructions {
+    color: grey;
+    font-size: 0.9em;
+  }
+  .formInputs {
+    align-items: center;
+    padding-top: 5%;
+    color: navy;
+    font-weight: 400;
+  }
+  input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  form button {
+    color: white;
+    background-color: navy;
+    padding: 7px 15px;
+    border-radius: 7px;
+    position: relative;
+    left: 75%;
+  }
+  #back {
+    margin-left: -100%;
+  }
+  .active {
+    color: orange;
+  }
+  .form {
+    display: none;
+  }
+  .visible {
+    display: block;
+    height: auto;
+    width: 40vw;
+  }
+  
+  .invalid {
+    border: 2px solid red;
+  }
+  #confirmation {
+    margin-bottom: 15px;
+  }
+  #confirmation strong {
+    margin-right: 15px;
+  }
+  form #confirmation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  form label {
+    display: flex;
+    font-weight: bold;
+  }
+  
+  form input[type="checkbox"] {
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+  }
+  
+  

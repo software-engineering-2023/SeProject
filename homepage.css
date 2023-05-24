@@ -1,0 +1,263 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+header{
+  position: relative;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  border-bottom: 1px solid white;
+  
+}
+header img{
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+h1{
+	padding:15px;
+	padding-left:20px;
+}
+
+
+nav, main, footer {
+  padding: 20px;
+}
+main img{
+  margin: 200px;
+  margin-right: 0;
+  position: absolute;
+  right: 100px;
+  color: navy;
+  font-weight: bold;
+  top: 0px;
+}
+h9{
+  margin: 180px;
+  margin-right: 0;
+  position: absolute;
+  right: 110px;
+  color:green;
+  font-weight: bold;
+  bottom: 400px;
+}
+p{
+  background-color: navy;
+  padding: 20px;
+  padding-left: 516px;
+  margin: 0;
+  width: max-content;
+  left: 0;
+  color: white;
+  position:absolute;
+  width:980px;
+  bottom: -300px;
+}
+
+.quote-container {
+  position:absolute;
+  top: 300px;
+  left: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  font-size: 50px;
+  line-height: 1.4;
+  color:navy;
+}
+
+.quote-container  {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0 0 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav img{
+  margin: -7px;
+  
+}
+
+.quote-container p {
+  margin: 0;
+}
+nav ,header{
+  width: 1000;
+  background-color: navy;
+  color: white;
+}
+section{
+  padding: 20px;
+  margin: 0;
+  background-color: navy;
+  display: inline;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid white; 
+}
+.subsection-list ul  {
+  list-style-type: none;
+  padding: 0;
+}
+b{
+  list-style-type: none;
+  margin: 0;
+  
+  position:absolute;
+  top: 80%;
+  
+}
+.subsection-list{
+  display: none;
+  margin-top: 10px;
+  position:absolute;
+  top: 20%;
+  left: 0;
+  background-color: navy;
+  color: white;
+}
+.subsection-list li{
+  margin-bottom: 5px;
+  color: white;
+  border-bottom: 1px solid white;
+  border-width: 100%;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+nav ul {
+  white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  background-color: navy;
+  display: inline;
+  color: white;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-right: 1px solid white; 
+}
+
+nav ul li:last-child a {
+  border-right: none; 
+}
+
+nav ul li a:hover {
+  background-color: #001f3f;
+}
+
+main {
+  margin-left: 20px;
+  background-color: white;
+  color: navy;
+}
+/* Section Styles */
+hq, h2 {
+  margin: 0;
+}
+
+
+
+
+#loan1{
+  padding: 20px;
+}
+button{
+  color:white;
+  background-color: navy;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor:pointer;
+}
+
+
+
+#bank-transactions1 {
+  padding: 20px;
+}
+
+.bank-transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bank-transactions li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.bank-transactions li:last-child {
+  border-bottom: none;
+}
+
+.bank-transactions .date {
+  font-weight: bold;
+}
+
+.bank-transactions .type {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.bank-transactions .amount {
+  color: #777;
+}
+
+
+
+#credit-card-transactions1 {
+  padding: 20px;
+}
+
+.credit-card-transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.credit-card-transactions li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.credit-card-transactions li:last-child {
+  border-bottom: none;
+}
+
+.credit-card-transactions .date {
+  font-weight: bold;
+}
+
+.credit-card-transactions .Dest {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.credit-card-transactions .amount {
+  color: #980000;
+}
+
+

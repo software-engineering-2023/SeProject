@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE Online Banking</title>
+  <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <h1>
+        <img src="logo.png"alt="logo" width="150px" height="80px"> </h1>
+        <hq>Welcome to SE Online Banking Website</hq>
+    </header>
+    <nav>
+      <section id="section1"><img src="cashnavy.png" width="25px" height="25px"> Cash Dealings</section>
+      <section id="section2"><img src="creditnavy.png" width="25px" height="25px">View Transactions</section>
+      
+      </nav>
+    <main>
+      <div class="quote-container">
+        <h10>Enjoy secure and convenient banking services.</h10>
+    </div>
+      <div id="subsection1" class="subsection-list">
+          <ul>
+              <li><a href="Radeem.html">Redeem for Cashback</a></li>
+              <li><a href="Bill.html">Pay Bills</a></li>
+              <li><a href="LoanHTML.html">Apply For A Loan</a></li>
+          </ul>
+      </div>
+  
+      <div id="subsection2" class="subsection-list">
+          <ul>
+              <li><a href="CreditTransaction.html">Credit Card Transaction</a></li>
+              <li><a href="BankTransaction.html">Bank Transactions</a></li>
+          </ul>
+      </div>
+  </body>
+  <main>
+  <img src="rates.png">
+  <h9><img src="homephoto.png"></h9>  
+  <footer>
+    <p>Banker Dashboard &copy; 2023</p>
+  </footer>
+  </main>
+  
+      <script>
+          var sections = document.querySelectorAll('section');
+          var subsections = document.querySelectorAll('.subsection-list');
+  
+          sections.forEach(function(section) {
+              section.addEventListener('mouseover', function() {
+                  subsections.forEach(function(subsection) {
+                      subsection.style.display = 'none';
+                  });
+  
+                  var subsectionId = 'subsection' + section.id.substr(7);
+                  var subsection = document.getElementById(subsectionId);
+                  subsection.style.display = 'block';
+              });
+          });
+      </script>
+    </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

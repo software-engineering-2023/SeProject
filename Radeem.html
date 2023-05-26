@@ -16,10 +16,15 @@
     <hw><div class="credit-card-points">
         <h3>Redeeming Your Credit Card Points: </h3>
         <label for="amount">Points Required:</label>
-        <input type="number" id="amount" step="0.01" min="0" required>
+        <input type="number" id="amount" step="1" min="0" required>
         <d>Total Points: <span id="credit-card-points">720</span></d>
         <button id="redeem-cashback">Redeem Cashback</button>
       </div></hw>
+      <div id="popup" class="popup-container">
+        <l>Are you sure you want to proceed?</l>
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+    </div>
       <hs>NOTE: Points Expires in 2023-07-08</hs>
       <footer>
         <p>Banker Dashboard &copy; 2023</p>

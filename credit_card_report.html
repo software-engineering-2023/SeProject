@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Report Credit Card Issue</title>
+  <link rel="stylesheet" type="text/css" href="credit_card_report.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>Report Credit Card Issue</h1>
+  </header>
+
+  <main>
+    <form id="reportForm">
+      <label for="nameInput">Name:</label>
+      <input type="text" id="nameInput" name="name" required>
+      <br>
+      <label for="emailInput">Email:</label>
+      <input type="email" id="emailInput" name="email" required>
+      <br>
+      <label for="cardNumberInput">Card Number:</label>
+      <input type="text" id="cardNumberInput" name="cardNumber" required>
+      <br>
+      <label for="issueTypeSelect">Issue Type:</label>
+      <select id="issueTypeSelect" name="issueType" required>
+        <option value="">Select an issue type</option>
+        <option value="Theft">Theft</option>
+        <option value="Loss">Loss</option>
+        <option value="Damage">Damage</option>
+      </select>
+      <br>
+      <label for="descriptionTextarea">Description:</label>
+      <textarea id="descriptionTextarea" name="description" rows="5" required></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Banking Website. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="credit_card_report.js"></script>
+</body>
+</html>

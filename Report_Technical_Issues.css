@@ -1,0 +1,83 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  padding: 20px;
+  background-color: navy;
+  color: white;
+}
+header img {
+  max-height: 100px; 
+  width: auto;
+  margin-right: 10px;
+}
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logoContainer img {
+  max-height: 50px;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  color: navy;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: navy;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: navy;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}

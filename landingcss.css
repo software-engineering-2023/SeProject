@@ -1,0 +1,538 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Merriweather", Arial;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #001f3f;
+}
+
+header img {
+    padding-top: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+h1 {
+    padding: 15px;
+    padding-left: 20px;
+}
+
+#logout{
+  padding: 10px 20px;
+  background-color: white;
+  color: navy;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout:hover {
+  background-color: rgb(76, 187, 23);
+}
+
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+nav,
+header {
+    width: 1000;
+    background-color: navy;
+    color: white;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: navy;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: -5px;
+    border-right: 1px solid #001f3f;
+    cursor: pointer;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+/* 
+nav ul li:hover {
+    background-color: #001f3f;
+} */
+
+nav ul li#navimg {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+main {
+    margin-left: 20px;
+    background-color: white;
+    color: navy;
+}
+
+.searchfor form {
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 0;
+}
+
+.searchfor input[type="text"] {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid navy;
+    border-radius: 5px;
+}
+
+.searchfor button {
+    padding: 10px 13px;
+    margin-left: 10px;
+
+    background-color: navy;
+    color: white;
+    border: 1px solid #001f3f;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#myButton.active {
+    background-color: rgb(76, 187, 23);
+}
+
+/*slider*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 590px;
+    display: flex;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.arrow {
+    color: gray;
+    width: 50px;
+    height: 50px;
+    background-color: navy;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* left: 10px;  */
+    /* transform: translateY(-50%); */
+    top: 50%;
+    cursor: pointer;
+    opacity: 0.65;
+    z-index: 2;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.arrow-left:hover::before {
+  content: "Slide to your other acoount";
+  position: absolute; /* Adjust the position of the text */
+  top: 24px; /* Center horizontally */
+  left: 120px;
+  transform: translateX(-50%);
+  background-color: navy;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.arrow-right:hover::before {
+  content: "Slide to your other acoount";
+  position: absolute; /* Adjust the position of the text */
+  top: 24px; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: navy;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.slider {
+    width: 200%;
+    display: flex;
+    height: 100%;
+    transition: transform 750ms ease;
+}
+
+.slide {
+    width: 120vw;
+    height: 100%;
+}
+
+.image-container {
+    padding: 20px;
+    width: 100%;
+}
+
+.currentB {
+  display: flex;
+  flex-direction: column;
+}
+
+.rightdiv {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+  justify-content: space-around;
+}
+.leftdiv {
+  margin-top: 10px;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .accountname {
+    color: navy;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .accountname h3{
+    float: left;
+    font-size: 35px;
+    margin-left: 100px;
+  }
+
+  .accountname p{
+    float: right;
+    font-size: 35px;
+    margin-right: 120px;
+  }
+
+  #Transactionbutton{
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #Transactionbutton:hover {
+    background-color: rgb(76, 187, 23);
+  }
+  
+  .transaction-container {
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    width: 93%;
+    /* overflow-y: scroll; */
+  }
+
+  .transaction-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .transaction {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .transaction .date,
+  .transaction .amount,
+  .transaction .type {
+    display: inline-block;
+  }
+
+  .transaction .amount {
+    color: green;
+  }
+
+  .transaction .type {
+    color: blue;
+  }
+
+  .slider-btn {
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .filter-container {
+    margin-top: 10px;
+  }
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+  }
+  
+  .filter-container select,
+  .filter-container input {
+    margin-right: 10px;
+  }
+  
+  .filter-container button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-container button:hover {
+    background-color: #45a049;
+  }
+  
+  .transaction {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .transaction .date,
+  .transaction .amount,
+  .transaction .type,
+  .transaction .location {
+    margin-right: 10px;
+  }
+
+  .transaction .datee,
+  .transaction .amountt,
+  .transaction .typee,
+  .transaction .locationn {
+    /* margin-right: 10px; */
+    font-weight: bold;
+  }
+
+  .filter-container select,
+.filter-container input[type="date"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+  }
+  
+  .transaction-containerr {
+    width: 80%;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    /* overflow-y: scroll; */
+  }
+
+  .transaction-wrapperr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transactionn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .transactionn .date,
+  .transactionn .amount,
+  .transactionn .type {
+    display: inline-block;
+  }
+
+  .transactionn .amount {
+    color: green;
+  }
+
+  .transactionn .type {
+    color: blue;
+  }
+  
+  .filter-containerr {
+    margin-top: 10px;
+  }
+  .filter-containerr {
+    margin-bottom: 20px;
+  }
+  
+  .filter-containerr label {
+    margin-right: 10px;
+  }
+  
+  .filter-containerr select,
+  .filter-containerr input {
+    margin-right: 10px;
+  }
+  
+  .filter-containerr button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .filter-containerr button:hover {
+    background-color: #45a049;
+  }
+  
+  .transactionn {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .transactionn .date,
+  .transactionn .amount,
+  .transactionn .type,
+  .transactionn .location {
+    margin-right: 10px;
+  }
+  .filter-containerr select,
+.filter-containerr input[type="date"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.info-container {
+    flex: 1.2;
+    padding: 50px;
+    text-align: center;
+}
+
+#neg{
+    color: red;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+#iconss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+@keyframes colorFill {
+    0% {
+        background-color: white;
+        /* Initial transparent background */
+    }
+
+    100% {
+        background-color: navy;
+        /* Final color */
+    }
+}
+
+#iconItemm:hover {
+     transform: scale(1.2);
+    color: white;
+     background-color: navy; 
+    transition: color 0.3s ease;
+    animation: colorFill 0.3s linear forwards; 
+}
+
+#section00 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#iconItemm {
+    width: 150px;
+    background-color: white;
+    border: #000 2px solid;
+    border-top: navy 10px solid;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    margin-right: 20px;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+#iconItemm h3 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*footer*/
+footer {
+    position: fixed;
+    height: 25px;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+#section00 h1{
+  color: navy;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
+}

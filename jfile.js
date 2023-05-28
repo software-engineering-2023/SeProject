@@ -209,3 +209,10 @@ function updateStatus(action) {
 function logout(){
   window.location.href = "login.html"; 
 }
+
+const fileInput = document.getElementById("fileInput");
+
+fileInput.addEventListener("change", function() {
+  const files = Array.from(fileInput.files);
+  // Do something with the selected files
+});

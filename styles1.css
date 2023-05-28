@@ -992,7 +992,6 @@ tr:hover {
 .account-info input[type="password"] {
   padding: 10px;
   width: 100%;
-  border: none;
   border-radius: 5px;
 }
 
@@ -1022,4 +1021,23 @@ tr:hover {
 
 #savechanges.active {
   background-color: rgb(76, 187, 23);
+}
+
+input{
+  border: 1px solid navy;
+  border-radius: 3px;
+}
+
+#formuser #username{
+  height: 40px;
+
+}
+
+#attachButton {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 100px;
+  cursor: pointer;
 }

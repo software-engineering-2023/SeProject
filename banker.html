@@ -10,9 +10,9 @@
 
 <body>
   <header>
-          <img src="logo.png" width="150px" height="80px">
-      <h1>Welcome, Banker!</h1>
-      <button id="logout" onclick="logout()">Log out</button>
+    <img src="logo.png" width="150px" height="80px">
+    <h1>Welcome, Banker!</h1>
+    <button id="logout" onclick="logout()">Log out</button>
   </header>
 
   <nav>
@@ -374,8 +374,8 @@
                 <p>Repayment Schedule: Monthly</p>
                 <p>Collateral: House</p>
                 <div class="acceptreject">
-                <p>Loan Status: <span class="status">Pending</span></p>
-                    <div id="buttons2">
+                  <p>Loan Status: <span class="status">Pending</span></p>
+                  <div id="buttons2">
                     <button class="acceptbutton" onclick="updateStatus('accept')">Approve</button>
                     <button class="rejectbutton" onclick="updateStatus('reject')">Reject</button>
                   </div>
@@ -455,11 +455,11 @@
                 </ul>
               </div>
               <div class="acceptreject">
-                <p>Credit Card Status: <span  class="status1">Pending</span></p>
-                  <div id="buttons1">
+                <p>Credit Card Status: <span class="status1">Pending</span></p>
+                <div id="buttons1">
                   <button class="acceptbutton" onclick="updateStatus('accept1')">Approve</button>
                   <button class="rejectbutton" onclick="updateStatus('reject1')">Reject</button>
-                  </div>
+                </div>
               </div>
             </div>
           </li>
@@ -505,11 +505,12 @@
       <br>
       <br>
       <div class="account-info">
-        <form>
+        <form id="formuser">
           <label for="username">Message</label>
           <input type="text" id="username" placeholder="Enter your Message">
-          <label for="password">Password</label>
-          <input type="password" id="password" placeholder="Enter your password">
+          <input type="file" id="fileInput" style="display: none;">
+          <input type="file" id="fileInput" style="display: none;">
+          <label for="fileInput" id="attachButton">Attach File</label>
           <button type="button" id="savechanges">Send</button>
         </form>
       </div>

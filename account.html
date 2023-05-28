@@ -8,8 +8,126 @@
     <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="./assets/css/theme.css">
-    <link rel="stylesheet" href="report.css">
-    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+    <style>
+        h2{
+            margin-left: 80px; 
+            color: navy;
+            margin-top: 20px;
+            font-size: 30;
+
+        }
+        h3{
+            color: navy;
+            font-size: 26;
+            margin-left: -15px;
+        }
+        div label{
+            font-size: medium;
+            color: navy;
+        }
+        .container {
+          flex: 1;
+          max-width: 800px;
+          padding: 20px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 40px;
+          margin: 0 0;
+          margin-left: 80px;
+          font-size: 14;
+          background-color: white;
+        }
+    
+        .form-group {
+          margin-bottom: 15px;
+        }
+    
+        label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 8px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+    
+        .btn {
+          display: inline-block;
+          padding: 8px 12px;
+          background-color: navy;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: whitesmoke;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: gray;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(103, 203, 103);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(103, 203, 103);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+      </style>
 </head>
 
 <body class="g-sidenav-show">
@@ -37,7 +155,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  active" href="javascript:;">
+                    <a class="nav-link  " href="reports.html">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
                             <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>office</title>
@@ -101,7 +219,7 @@
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link  " href="javascript:;">
+                    <a class="nav-link  active" href="account.html">
                         <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
                             <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <title>customer-support</title>
@@ -118,7 +236,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <span class="nav-link-text ms-1">Profile</span>
+                        <span class="nav-link-text ms-1">Account Info</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -144,6 +262,7 @@
             </ul>
         </div>
     </nav>
+    
     <div class="main-content" id="panel" bis_skin_checked="1">
         <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 mt-3 shadow-none border-radius-xl bg-success" id="navbarTop" style="background-color: navy">
             <div class="container-fluid" bis_skin_checked="1">
@@ -157,10 +276,18 @@
                     <ul class="navbar-nav navbar-nav-hover ms-auto">
                         <div class="row" bis_skin_checked="1">
                             <div class="col-auto m-auto" bis_skin_checked="1">
-                              <a class="cursor-pointer" href="account.html">
-                                <i class="fa fa-cog fixed-plugin-button-nav" aria-hidden="true"></i>
-                            </a>
+                                <label class="switch" title="dark mode" id="darkModeToggle">
+                                  <input type="checkbox" id="dark">
+                                  <span class="slider round"></span>
+                                </label>
+                              </div>
+                              
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="account.html">
+                                    <i class="fa fa-cog fixed-plugin-button-nav" aria-hidden="true"></i>
+                                </a>
                             </div>
+                            
                             <div class="col-auto m-auto" bis_skin_checked="1">
                                 <div class="dropdown" bis_skin_checked="1">
                                     <a class="cursor-pointer" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
@@ -182,86 +309,78 @@
                 </div>
             </div>
         </nav>
-        <table>
-            <tr>
-              <th>Report ID</th>
-              <th>Customer Name</th>
-              <th>Report Details</th>
-              <th>Status</th>
-              <th>Action</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>John Doe</td>
-              <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-              <td>Pending</td>
-              <td>
-                <button class="resolve-btn">Resolve</button>
-                <button class="reply-btn">Reply</button>
-                <select class="assign-select">
-                  <option value="">Assign To</option>
-                  <option value="employee1">Employee 1</option>
-                  <option value="employee2">Employee 2</option>
-                  <option value="employee3">Employee 3</option>
-                </select>
-                <button class="assign-btn">Assign</button>
-              </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Mohamed Ahmed</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>Closed</td>
-                <td>
-                  <button disabled class="resolve-btn">Resolve</button>
-                  <button disabled class="reply-btn">Reply</button>
-                  <select disabled class="assign-select">
-                    <option value="">Assign To</option>
-                    <option value="employee1">Employee 1</option>
-                    <option value="employee2">Employee 2</option>
-                    <option value="employee3">Employee 3</option>
-                  </select>
-                  <button disabled class="assign-btn">Assign</button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Ahmed Mohamed</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>Resolved</td>
-                <td>
-                  <button disabled class="resolve-btn">Resolve</button>
-                  <button disabled class="reply-btn">Reply</button>
-                  <select disabled class="assign-select">
-                    <option value="">Assign To</option>
-                    <option value="employee1">Employee 1</option>
-                    <option value="employee2">Employee 2</option>
-                    <option value="employee3">Employee 3</option>
-                  </select>
-                  <button disabled class="assign-btn">Assign</button>
-                </td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Mariam Ahmed</td>
-                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
-                <td>Pending</td>
-                <td>
-                  <button class="resolve-btn">Resolve</button>
-                  <button class="reply-btn">Reply</button>
-                  <select class="assign-select">
-                    <option value="">Assign To</option>
-                    <option value="employee1">Employee 1</option>
-                    <option value="employee2">Employee 2</option>
-                    <option value="employee3">Employee 3</option>
-                  </select>
-                  <button class="assign-btn">Assign</button>
-                </td>
-              </tr>
-              <tr>
-            <!-- More report rows go here -->
-          </table>
-        <footer class="page__footer" id="reports">
+        <h2> Account Information</h2>
+        <div class="container">
+            <div>
+              
+              <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" name="inp" id="fullName" value="John Doe" readonly>
+              </div>
+              <div class="form-group">
+                <label for="employeeId">Employee ID:</label>
+                <input type="text" name="inp" id="employeeId" value="12345" readonly>
+              </div>
+              <div class="form-group">
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="text" name="inp" id="dateOfBirth" value="1980-01-01" readonly>
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender:</label>
+                <input type="text" name="inp" id="gender" value="Male" readonly>
+              </div>
+              <div class="form-group">
+                <label for="emergencyContact">Emergency Contact Name:</label>
+                <input type="text" name="inp" id="emergencyContact" value="Mary Johnson (Mother)" readonly>
+              </div>
+              <hr>
+        
+              <h3>Change Password</h3>
+        
+              <div class="form-group">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" name="inp" id="currentPassword">
+              </div>
+        
+              <div class="form-group">
+                <label for="newPassword">New Password:</label>
+                <input type="password" name="inp" id="newPassword">
+              </div>
+        
+              <div class="form-group">
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" name="inp" id="confirmPassword">
+              </div>
+        
+              <button class="btn" onclick="changePassword()">Change Password</button>
+              
+            </div>
+            <div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="text" name="inp" id="contactNumber" value="(+20)123456789" readonly>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="inp" id="email" value="johndoe@example.com" readonly>
+                  </div>
+              <div class="form-group">
+                <label for="position">Position:</label>
+                <input type="text" name="inp" id="position" value="SE Bank Admin" readonly>
+              </div>
+              <div class="form-group">
+                <label for="nationality">Nationality:</label>
+                <input type="text" name="inp" id="nationality" value="Egyptian" readonly>
+              </div>
+              <div class="form-group">
+                <label for="emergencyContact">Emergency Contact Phone Number:</label>
+                <input type="text" name="inp" id="emergencyPhone" value="(+20)123456789" readonly>
+              </div>
+              <hr>
+              
+            </div>
+          </div>
+        <footer class="page__footer" style="position: absolute; width: 81.5%;">
             <span class="logo"><img src="logo.png" width=140px height=70px/></span>
             <span style="text-align: center;">Copyright &#169 SE International Bank</span>
             <span style="width:330px; height:auto">
@@ -274,6 +393,74 @@
     <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/chartjs.min.js"></script>
     <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/Chart.extension.js"></script>
     <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
+    <script>
+        function changePassword() {
+          var currentPassword = document.getElementById('currentPassword').value;
+          var newPassword = document.getElementById('newPassword').value;
+          var confirmPassword = document.getElementById('confirmPassword').value;
+    
+          // Perform validation checks
+          if (currentPassword === '') {
+            alert('Please enter your current password.');
+            return;
+          }
+    
+          if (newPassword === '') {
+            alert('Please enter a new password.');
+            return;
+          }
+    
+          if (confirmPassword === '') {
+            alert('Please confirm your new password.');
+            return;
+          }
+    
+          if (newPassword !== confirmPassword) {
+            alert('The new passwords do not match. Please try again.');
+            return;
+          }
+    
+          // Password change logic here
+          // You can send an AJAX request to the server to update the password
+    
+          alert('Password changed successfully!');
+          // Clear the password fields
+          document.getElementById('currentPassword').value = '';
+          document.getElementById('newPassword').value = '';
+          document.getElementById('confirmPassword').value = '';
+        }
+      </script>
+      <script>
+        // JavaScript code here
+        var dark = 0;
+        var darkModeToggle = document.getElementById('dark');
+        const con=document.getElementsByName('inp');
+        darkModeToggle.addEventListener('change', function() {
+          dark = this.checked ? 1 : 0; // Update 'dark' based on the checkbox state
+          if(dark==1){
+            document.getElementsByClassName('container')[0].style.backgroundColor='#e0e0e0'
+            document.body.style.backgroundColor='#e0e0e0'
+            document.getElementsByClassName('collapse navbar-collapse  w-auto')[0].style.backgroundColor='#e0e0e0'
+            document.getElementsByClassName('nav-link active')[0].style.backgroundColor='#e0e0e0'
+            con.forEach(function(element) {
+            element.style.backgroundColor='#e0e0e0';
+            element.style.border='2px solid black';
+            element.style.color='black';
+            });
+          }
+          else{
+            document.getElementsByClassName('container')[0].style.backgroundColor='white'
+            document.body.style.backgroundColor='white'
+            document.getElementsByClassName('collapse navbar-collapse  w-auto')[0].style.backgroundColor='white'
+            document.getElementsByClassName('nav-link active')[0].style.backgroundColor='white'
+            con.forEach(function(element) {
+            element.style.backgroundColor='white';
+            element.style.border='1px solid lightgray';
+            element.style.color='black';
+            });
+          }
+        });
+      </script>
     <script>
         if (document.querySelector("#chart-bars")) {
            	var ctx = document.getElementById("chart-bars").getContext("2d");
@@ -441,4 +628,5 @@
             }); 
            };
     </script>
+    
 </body>

@@ -1,0 +1,1018 @@
+/* General Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding-bottom: 28px;
+}
+
+.hidden{
+  display: none;
+}
+
+header{
+  position: relative;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  border-bottom: 1px solid white;
+}
+header img{
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+h1{
+	padding:15px;
+	padding-left:20px;
+}
+
+nav, main {
+  padding: 20px;
+}
+
+nav ,header{
+  width: 1000;
+  background-color: navy;
+  color: white;
+}
+
+nav ul{
+  float: left;
+}
+
+nav{
+  height: 19px;
+}
+
+nav button{
+  float: right;
+}
+
+nav ul {
+  white-space: nowrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  background-color: navy;
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-right: 1px solid white; 
+}
+
+nav ul li:last-child a {
+  border-right: none; 
+}
+
+nav ul li a:hover {
+  background-color: #001f3f;
+}
+
+main {
+  margin-left: 20px;
+  background-color: white;
+  color: navy;
+}
+
+footer {
+  position: fixed;
+  height:28px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+/* Section Styles */
+h1, h2 {
+  margin: 0;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+
+.performance {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.notifications {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.sales-targets {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.customer-insights {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.recent-activities {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.calendar {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news-updates {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.personalized-messages {
+  background-color: #fff;
+  padding: 20px;
+}
+.performance {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.performance h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.performance-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.performance-summary .kpi {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+}
+
+.performance-summary .kpi h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#counter {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counterr {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counterrr {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counterrrr {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counter1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counter2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counter3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+#counter4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.notifications {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.notifications h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.notification-list {
+  list-style-type: none;
+}
+
+.notification-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.notification-type {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.notification-message {
+  color: #666;
+}
+.customer-insights {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.customer-insights h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.customer-summary {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.customer-summary .insight {
+  background-color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+}
+
+.customer-summary .insight h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.customer-summary .insight p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.recent-activities {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.recent-activities h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.activity-list {
+  list-style-type: none;
+}
+
+.activity-list li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.activity-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.activity-description {
+  color: #666;
+}
+
+.news-updates {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.news-updates h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-list {
+  list-style-type: none;
+}
+
+.news-list li {
+  margin-bottom: 20px;
+}
+
+.news-date {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.news-description {
+  color: #666;
+}
+.personalized-messages {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.personalized-messages h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.message-container {
+  margin-top: 10px;
+}
+
+.message {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.message-sender {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+}
+
+.message-content {
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Account Summary Styles */
+#customer-management {
+  padding: 20px;
+}
+
+.customer-search {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.customer-search h2 {
+  padding-top: 12px;
+}
+
+.customer-search form {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.customer-search input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid navy;
+  border-radius: 5px;
+}
+
+.customer-search button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#myButton.active {
+  background-color: rgb(76, 187, 23);
+}
+
+#logout{
+  padding: 10px 20px;
+  background-color: white;
+  color: navy;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout:hover {
+  background-color: rgb(76, 187, 23);
+}
+
+.customer-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.customer-list li {
+  display: fixed;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.listitems{
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.customer-list li:last-child {
+  border-bottom: none;
+}
+
+.customer-list .customer-name {
+  font-weight: bold;
+}
+
+.customer-list .customer-id {
+  color: #777;
+  font-size: 14px;
+}
+
+.customer-list .view-details {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#details1 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top:20px;
+  box-shadow: 0 2px 5px rgba(217, 159, 159, 0.1);
+}
+
+#details1 h3 {
+  margin-bottom: 10px;
+}
+
+#details1 p {
+  margin: 0;
+}
+
+#details1 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details1 li {
+  margin-bottom: 5px;
+}
+
+#details1 strong {
+  font-weight: bold;
+}
+
+#details2 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#details2 h3 {
+  margin-bottom: 10px;
+}
+
+#details2 p {
+  margin: 0;
+}
+
+#details2 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details2 li {
+  margin-bottom: 5px;
+}
+
+#details2 strong {
+  font-weight: bold;
+}
+
+#details3 {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#details3 h3 {
+  margin-bottom: 10px;
+}
+
+#details3 p {
+  margin: 0;
+}
+
+#details3 ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+#details3 li {
+  margin-bottom: 5px;
+}
+
+#details3 strong {
+  font-weight: bold;
+}
+
+/* Reports Styles */
+#reports {
+  padding: 20px;
+}
+
+.reportss{
+  text-align: center;
+  display:flex;
+  justify-content: space-between;
+}
+
+.reportss #buttons{
+  display:none;
+}
+
+.acceptreject #buttons2{
+  float: right;
+}
+
+.acceptreject #buttons1{
+  float: right;
+}
+
+.acceptreject p{
+  float: left;
+}
+
+.acceptbutton {
+  background-color: green;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.rejectbutton {
+  background-color: red;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.report-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.report-list li {
+  display: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.report-list li:last-child {
+  border-bottom: none;
+}
+
+.report-list .report-name {
+  font-weight: bold;
+}
+
+.report-list .view-report {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.report {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e3e3e3;
+}
+
+/* Loan Styles */
+#loan {
+  padding: 20px;
+}
+
+.loan-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.loan-list li {
+  display: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.loan-list li:last-child {
+  border-bottom: none;
+}
+
+.loan-list .loan-id {
+  font-weight: bold;
+}
+
+.loan-list .loan-amount {
+  color: #777;
+}
+
+.loan-list .loan-status {
+  color: navy;
+  text-transform: capitalize;
+}
+
+.loan-list .view-details {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit1.active {
+  background-color: rgb(76, 187, 23);
+}
+
+#submit2.active {
+  background-color: rgb(76, 187, 23);
+}
+
+/* Styles for loan details section */
+.loan-details {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.loan-details h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for loan information */
+.loan-info {
+  margin-bottom: 20px;
+}
+
+.loan-info h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.loan-info p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.loan-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loan-info a:hover {
+  text-decoration: underline;
+}
+
+.loan-info p.loan-amount {
+  font-weight: bold;
+}
+
+.loan-info p.loan-status {
+  color: green;
+}
+
+.loan-info p.collateral {
+  font-style: italic;
+}
+
+
+/* credit Styles */
+#credit {
+  padding: 20px;
+}
+
+.credit-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.credit-list li {
+  display: fixed;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.credit-list li:last-child {
+  border-bottom: none;
+}
+
+.credit-list .credit-id {
+  font-weight: bold;
+}
+
+.credit-list  {
+  color: #777;
+}
+
+.credit-list .credit-status {
+  color: navy;
+  text-transform: capitalize;
+}
+
+.credit-list .view-details {
+  padding: 5px 10px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#submit1.active {
+  background-color: rgb(76, 187, 23);
+}
+
+#submit2.active {
+  background-color: rgb(76, 187, 23);
+}
+
+/* Styles for loan details section */
+.credit-details {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.credit-details h2 {
+  color: black;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for loan information */
+.credit-info {
+  margin-top: 20px;
+}
+
+.credit-info h3 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.credit-info p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.credit-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.credit-info a:hover {
+  text-decoration: underline;
+}
+
+.credit-info  {
+  font-weight: bold;
+}
+
+.credit-info p.loan-status {
+  color: green;
+}
+
+.credit-info p.collateral {
+  font-style: italic;
+}
+
+
+/* Customer Support Styles */
+#customer-support {
+  padding: 20px;
+}
+
+.customer-support-form {
+  margin-bottom: 20px;
+}
+
+.customer-support-form h2 {
+  margin-top: 0;
+}
+
+.customer-support-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.customer-support-form label {
+  font-weight: bold;
+}
+
+.customer-support-form input[type="text"],
+.customer-support-form input[type="email"],
+.customer-support-form textarea {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.customer-support-form textarea {
+  height: 100px;
+}
+
+.customer-support-form button {
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.customer-support-questions {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.customer-support-questions h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+.question h4 {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.question p {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.reply-form form {
+  margin-top: 10px;
+}
+
+.reply-form label {
+  color: #555;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reply-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.reply-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.reply-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+
+/* Account Settings Styles */
+#account-settings {
+  padding: 20px;
+}
+
+.account-info {
+  margin-bottom: 20px;
+}
+
+.account-info h3,
+.account-options h3 {
+  margin-top: 0;
+}
+
+.account-info form {
+  display: grid;
+  gap: 10px;
+}
+
+.account-info label {
+  font-weight: bold;
+}
+
+.account-info input[type="text"],
+.account-info input[type="email"],
+.account-info input[type="password"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.account-info button {
+  padding: 10px 20px;
+  background-color: navy;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.account-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.account-options li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.account-options li:last-child {
+  border-bottom: none;
+}
+
+#savechanges.active {
+  background-color: rgb(76, 187, 23);
+}

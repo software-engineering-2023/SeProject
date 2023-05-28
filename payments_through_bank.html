@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pay Bills</title>
+  <link rel="stylesheet" type="text/css" href="Pay_Bills.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo">
+    <h1>Pay Bills</h1>
+  </header>
+
+  <main>
+    <form id="billForm">
+      <label for="billTypeSelect">Bill Type:</label>
+      <select id="billTypeSelect" name="billType" required>
+        <option value="" disabled selected>Select bill type</option>
+        <option value="gas">Gas</option>
+        <option value="water">Water</option>
+        <option value="electricity">Electricity</option>
+        <option value="telephone">Telephone</option>
+      </select>
+      <br>
+      <label for="paymentMethodRadio">Payment Method:</label>
+      <div id="paymentMethodRadio">
+        <label>
+          <input type="radio" name="paymentMethod" value="bank" required>
+          Pay through bank
+        </label>
+        <label>
+          <input type="radio" name="paymentMethod" value="thirdParty">
+          Pay through third-party app
+        </label>
+      </div>
+      <br>
+      <input type="submit" value="Pay">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Banking Website. All rights reserved.</p>
+  </footer>
+
+  <script src="Pay_Bills.js"></script>
+</body>
+</html>

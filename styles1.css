@@ -991,7 +991,7 @@ tr:hover {
 .account-info input[type="email"],
 .account-info input[type="password"] {
   padding: 10px;
-  width: 100%;
+  width: 98%;
   border-radius: 5px;
 }
 

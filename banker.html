@@ -10,8 +10,9 @@
 
 <body>
   <header>
-    <h1>Welcome, Banker!</h1>
-    <img src="logo.png" width="150px" height="80px">
+          <img src="logo.png" width="150px" height="80px">
+      <h1>Welcome, Banker!</h1>
+      <button id="logout" onclick="logout()">Log out</button>
   </header>
 
   <nav>
@@ -23,8 +24,9 @@
       <li><a href="#credit-requests" onclick="toggleSection('hcredit')">Credit Card Requests</a></li>
       <li><a href="#customer-support" onclick="toggleSection('hcustomer-support')">Customer Support</a></li>
       <li><a href="#account-settings" onclick="toggleSection('haccount-settings')">Account Settings</a></li>
+      <li><a href="#Reportto-Admin" onclick="toggleSection('hReportto-Admin')">Report To Admin</a></li>
     </ul>
-    <button id="logout" onclick="logout()">Log out</button>
+    <!-- <button id="logout" onclick="logout()">Log out</button> -->
   </nav>
 
   <main>
@@ -497,11 +499,28 @@
       </div>
     </section>
 
+    <section class="sections hidden" id="hReportto-Admin">
+      <h2>Report to Admin</h2>
+      <br>
+      <br>
+      <br>
+      <div class="account-info">
+        <form>
+          <label for="username">Message</label>
+          <input type="text" id="username" placeholder="Enter your Message">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <button type="button" id="savechanges">Send</button>
+        </form>
+      </div>
+    </section>
 
     <section class="sections hidden" id="haccount-settings">
       <h2>Account Settings</h2>
+      <br>
+      <br>
+      <br>
       <div class="account-info">
-        <h3>Account Information</h3>
         <form>
           <label for="username">Username</label>
           <input type="text" id="username" placeholder="Enter your username">

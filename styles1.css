@@ -1,4 +1,14 @@
 /* General Styles */
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;
+    border-bottom: 1px solid white;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -10,22 +20,19 @@ body {
   display: none;
 }
 
-header{
-  position: relative;
-  padding-top:20px;
-  padding-left:20px;
-  padding-right:20px;
-  border-bottom: 1px solid white;
-}
 header img{
   padding-top: 10px;
-  position: absolute;
-  right: 0;
-  top: 0;
+  float: left;
 }
-h1{
+header h1{
 	padding:15px;
 	padding-left:20px;
+}
+
+header button{
+	padding:15px;
+	padding-left:20px;
+  float: right;
 }
 
 nav, main {

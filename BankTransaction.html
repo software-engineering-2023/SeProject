@@ -23,7 +23,7 @@
     </div>
     <ul>
         <li>
-            <img src="home.png" width="30px" height="30px">
+            <img src="home.png" width="30px" height="30px" onclick="home()">
             
         </li>
     </ul>
@@ -47,7 +47,7 @@
       <label for="report-type">Transaction Type:</label>
       <select id="report-type" name="report-type" required>
         <option value="" selected disabled>Choose a Type</option>
-        <option value="stolen-lost-card">between ur accounts </option>
+        <option value="stolen-lost-card">between your accounts </option>
         <option value="account-issue">Account Associated with SE</option>
         <option value="transaction-issue">Local Account outside SE</option>
         <option value="customer-service-dispute">International</option>
@@ -59,7 +59,11 @@
         <label for="description" id="labell">Purpose:</label>
         <textarea id="description" name="description" rows="4" cols="50"></textarea>
         <label for="account-number" id="labell">Account Number:</label>
-        <input type="text" id="account-number" name="account-number">
+        <select id="transaction-locationn">
+          <option value="all">chose</option>
+          <option value="Cairo">123456</option>
+          <option value="Alex">654321</option>
+        </select>
         <label for="account-number" id="labell">Amount:</label>
         <input type="text" id="account-number" name="account-number">
       </div>
@@ -70,7 +74,7 @@
         <label for="transaction-number" id="labell">Transaction Number:</label>
         <input type="text" id="transaction-number" name="transaction-number">
 
-        <label for="account-number" id="labell">Recipient Number:</label>
+        <label for="account-number" id="labell">Recipient Name:</label>
         <input type="text" id="account-number" name="account-number">
         <label for="account-number" id="labell">Amount:</label>
         <input type="text" id="account-number" name="account-number">

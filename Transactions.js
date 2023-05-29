@@ -175,3 +175,7 @@ submitButton.addEventListener('click', function() {
 function logout(){
     window.location.href = "index.html"; 
   }
+
+  function home(){
+    window.location.href = "landing.html"; 
+  }

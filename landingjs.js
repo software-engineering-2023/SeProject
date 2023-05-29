@@ -53,7 +53,7 @@ function logout(){
 }
 
 function loan(){
-  window.location.href = "loans.html"; 
+  window.location.href = "loan.html"; 
 }
 
 function report(){

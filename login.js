@@ -27,15 +27,23 @@ function generate() {
 }
 form.addEventListener("submit", function (event) {
   const user_input = document.getElementById("captcha").value;
-  console.log("hello");
-  console.log(user_input);
-  console.log(captcha.innerHTML);
+  var user=document.getElementById("username").value;
+  var pass=document.getElementById("password").value;
   if (user_input == captcha.innerHTML) {
-    console.log("hello22");
     if (!form.checkValidity()) {
       event.preventDefault(); // Prevent form submission if validation fails
     } else {
-      //event.preventDefault();
+      event.preventDefault();
+      if(user==="admin"&&pass==="admin"){
+        window.location.href = "admin.html";
+      }
+      if(user==="banker"&&pass==="banker"){
+        window.location.href = "banker.html";
+      }
+      if(user==="user"&&pass==="user"){
+        window.location.href = "landing.html";
+      }
+      
     }
   } else {
     event.preventDefault();

@@ -66,7 +66,7 @@
             <label for="description">Description:</label>
         <textarea id="description" name="description" rows="4" cols="50"></textarea>
           <label for="account-number">Account Number:</label>
-          <input type="text" id="account-number" name="account-number">
+          <input type="number" id="account-number" name="account-number">
         </div>
         
         <div id="transaction-fields" style="display: none;">
@@ -276,7 +276,7 @@ reportTypeSelect.addEventListener("change", function() {
   }
 });
 document.getElementById("issue-report-form").addEventListener("submit", function(event) {
-  event.preventDefault();
+  
   
   // Perform form validation here if needed
   
@@ -294,6 +294,7 @@ document.getElementById("issue-report-form").addEventListener("submit", function
   document.getElementById("dispute-date").value = "";
   document.getElementById("website-issue").checked = false;
   document.getElementById("app-issue").checked = false;
+  return;
 });
 
 submitButton.addEventListener("click", function() {

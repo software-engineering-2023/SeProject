@@ -1,0 +1,195 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard Builder</title>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+</head>
+<body class="g-sidenav-show">
+    
+    <div class="main-content" id="panel" bis_skin_checked="1">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 mt-3 shadow-none border-radius-xl bg-success" id="navbarTop" style="background-color: navy">
+            <div class="container-fluid" bis_skin_checked="1">
+                
+                    <Strong style="color:white">Hello, John</Strong>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation" bis_skin_checked="1">
+                    <ul class="navbar-nav navbar-nav-hover ms-auto">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="landing.html">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="userAccount.html">
+                                    <i class="fa fa-cog fixed-plugin-button-nav" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="col-auto" bis_skin_checked="1">
+                                <div class="bg-white border-radius-lg d-flex me-2" bis_skin_checked="1">
+                                    <input type="text" class="form-control border-0 ps-3" placeholder="Type here...">
+                                    <button class="btn bg-gradient-primary my-1 me-1">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="body">
+            <h2>Loan Application Form</h2>
+            <form id="loanForm" method="post">
+                <div class="form-group" id="type">
+                    <label for="loanType">Loan Type:</label>
+                    <select id="loanType" name="loanType" required>
+                      <option value="">Select Loan Type</option>
+                      <option value="Personal Loan">Personal Loan</option>
+                      <option value="Home Loan">Home Loan</option>
+                      <option value="Car Loan">Car Loan</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <p>Purpose of Loan:</p>
+                    <textarea id="purpose" name="purpose" rows="4" cols="50" required></textarea>
+                  </div>
+                  <div class="container">
+                <div class="form-group amount">
+                  <label for="amount">Loan Amount:</label>
+                  <input type="number" id="amount" name="amount" required>
+                </div>
+                
+                <div class="form-group duration">
+                  <label for="duration">Loan Duration (months):</label>
+                  <input type="number" id="duration" name="duration" required>
+                </div>
+            </div>
+                <div class="form-group">
+                    <label for="documents">National ID/Passport:</label>
+                    <input type="file" id="documents" name="documents" required>
+                </div>
+                <div class="form-group">
+                    <label for="salaryStatement">Salary Statement:</label>
+                    <input type="file" id="salaryStatement" name="salaryStatement" required>
+                  </div>
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+        <footer class="page__footer">
+            <span class="logo"><img src="logo.png" width=140px height=70px/></span>
+            <span style="text-align: center;">Copyright &#169 SE International Bank</span>
+            <span style="width:330px; height:auto">
+          </span>
+          </footer>
+    </div>
+    
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
+
+</body>
+<style>
+    #body{
+        width: 80%;
+        margin: auto;
+    }
+    #loanForm{
+        margin-left: 30px;
+    }
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+#type label{
+    display: inline-block;
+}
+input[type="file"]{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 40%;
+}
+select{
+    width: 20%;
+    height: 30px;
+}
+.amount label, .duration label{
+    display: inline-block;
+}
+h2 {
+  text-align: left;
+  color: navy;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.container input{
+    width: 40%;
+}
+.container{
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+label,p {
+  display: block;
+  font-weight: bold;
+  font-size: large;
+  color: navy;
+}
+textarea{
+    width: 100%;
+}
+input {
+  width: 20%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+    background-color: lightgray;
+}
+
+</style>
+<script>
+    window.onload = function() {
+  var form = document.getElementById('loanForm');
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // prevent form submission
+
+    // Retrieve form data
+    var amount = document.getElementById('amount').value;
+    var duration = document.getElementById('duration').value;
+
+    // Perform form validation
+    if ( amount === '' || duration === '') {
+      alert('Please fill in all fields.');
+      return;
+    }
+    alert('Request Received we will contact you Back!');
+    form.reset();
+  });
+};
+
+</script>
+
+</html>

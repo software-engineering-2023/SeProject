@@ -1,0 +1,696 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard Builder</title>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    
+    <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+</head>
+<body class="g-sidenav-show">
+    <nav class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start position-absolute ms-3 bg-white" id="sidenav-main">
+        <div class="collapse navbar-collapse  w-auto" id="sidenav-collapse-main" bis_skin_checked="1">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link  active" href="javascript:;">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <svg width="12px" height="12px" viewBox="0 0 45 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>shop </title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-1716.000000, -439.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="shop-" transform="translate(0.000000, 148.000000)">
+                                                <path class="color-background" d="M46.7199583,10.7414583 L40.8449583,0.949791667 C40.4909749,0.360605034 39.8540131,0 39.1666667,0 L7.83333333,0 C7.1459869,0 6.50902508,0.360605034 6.15504167,0.949791667 L0.280041667,10.7414583 C0.0969176761,11.0460037 -1.23209662e-05,11.3946378 -1.23209662e-05,11.75 C-0.00758042603,16.0663731 3.48367543,19.5725301 7.80004167,19.5833333 L7.81570833,19.5833333 C9.75003686,19.5882688 11.6168794,18.8726691 13.0522917,17.5760417 C16.0171492,20.2556967 20.5292675,20.2556967 23.494125,17.5760417 C26.4604562,20.2616016 30.9794188,20.2616016 33.94575,17.5760417 C36.2421905,19.6477597 39.5441143,20.1708521 42.3684437,18.9103691 C45.1927731,17.649886 47.0084685,14.8428276 47.0000295,11.75 C47.0000295,11.3946378 46.9030823,11.0460037 46.7199583,10.7414583 Z" id="Path" opacity="0.598981585"></path>
+                                                <path class="color-background" d="M39.198,22.4912623 C37.3776246,22.4928106 35.5817531,22.0149171 33.951625,21.0951667 L33.92225,21.1107282 C31.1430221,22.6838032 27.9255001,22.9318916 24.9844167,21.7998837 C24.4750389,21.605469 23.9777983,21.3722567 23.4960833,21.1018359 L23.4745417,21.1129513 C20.6961809,22.6871153 17.4786145,22.9344611 14.5386667,21.7998837 C14.029926,21.6054643 13.533337,21.3722507 13.0522917,21.1018359 C11.4250962,22.0190609 9.63246555,22.4947009 7.81570833,22.4912623 C7.16510551,22.4842162 6.51607673,22.4173045 5.875,22.2911849 L5.875,44.7220845 C5.875,45.9498589 6.7517757,46.9451667 7.83333333,46.9451667 L19.5833333,46.9451667 L19.5833333,33.6066734 L27.4166667,33.6066734 L27.4166667,46.9451667 L39.1666667,46.9451667 C40.2482243,46.9451667 41.125,45.9498589 41.125,44.7220845 L41.125,22.2822926 C40.4887822,22.4116582 39.8442868,22.4815492 39.198,22.4912623 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="reports.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <img src="data:image/png;base64,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" 
+                            width="23px" height="22px">
+                                <title>reports</title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="office" transform="translate(153.000000, 2.000000)">
+                                                <path class="color-background" d="M12.25,17.5 L8.75,17.5 L8.75,1.75 C8.75,0.78225 9.53225,0 10.5,0 L31.5,0 C32.46775,0 33.25,0.78225 33.25,1.75 L33.25,12.25 L29.75,12.25 L29.75,3.5 L12.25,3.5 L12.25,17.5 Z" id="Path" opacity="0.6"></path>
+                                                <path class="color-background" d="M40.25,14 L24.5,14 C23.53225,14 22.75,14.78225 22.75,15.75 L22.75,38.5 L19.25,38.5 L19.25,22.75 C19.25,21.78225 18.46775,21 17.5,21 L1.75,21 C0.78225,21 0,21.78225 0,22.75 L0,40.25 C0,41.21775 0.78225,42 1.75,42 L40.25,42 C41.21775,42 42,41.21775 42,40.25 L42,15.75 C42,14.78225 41.21775,14 40.25,14 Z M12.25,36.75 L7,36.75 L7,33.25 L12.25,33.25 L12.25,36.75 Z M12.25,29.75 L7,29.75 L7,26.25 L12.25,26.25 L12.25,29.75 Z M35,36.75 L29.75,36.75 L29.75,33.25 L35,33.25 L35,36.75 Z M35,29.75 L29.75,29.75 L29.75,26.25 L35,26.25 L35,29.75 Z M35,22.75 L29.75,22.75 L29.75,19.25 L35,19.25 L35,22.75 Z" id="Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Reports</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="employeeReg.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3456/3456388.png" width="23px" height="25px">
+                                
+                              <title>register employee</title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-2169.000000, -745.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="credit-card" transform="translate(453.000000, 454.000000)">
+                                                <path class="color-background" d="M43,10.7482083 L43,3.58333333 C43,1.60354167 41.3964583,0 39.4166667,0 L3.58333333,0 C1.60354167,0 0,1.60354167 0,3.58333333 L0,10.7482083 L43,10.7482083 Z" id="Path" opacity="0.593633743"></path>
+                                                <path class="color-background" d="M0,16.125 L0,32.25 C0,34.2297917 1.60354167,35.8333333 3.58333333,35.8333333 L39.4166667,35.8333333 C41.3964583,35.8333333 43,34.2297917 43,32.25 L43,16.125 L0,16.125 Z M19.7083333,26.875 L7.16666667,26.875 L7.16666667,23.2916667 L19.7083333,23.2916667 L19.7083333,26.875 Z M35.8333333,26.875 L28.6666667,26.875 L28.6666667,23.2916667 L35.8333333,23.2916667 L35.8333333,26.875 Z" id="Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Register Employee</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="announcements.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2417/2417835.png" width="20px" height="20px" >
+                                <title>announcements</title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="settings" transform="translate(304.000000, 151.000000)">
+                                                <polygon class="color-background" id="Path" opacity="0.596981957" points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667"></polygon>
+                                                <path class="color-background" d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z" id="Path" opacity="0.596981957"></path>
+                                                <path class="color-background" d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Make Announcement</span>
+                    </a>
+                </li>
+                <li class="nav-item mt-3">
+                    <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Account pages</h6>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="account.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <svg width="12px" height="12px" viewBox="0 0 46 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>customer-support</title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-1717.000000, -291.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="customer-support" transform="translate(1.000000, 0.000000)">
+                                                <path class="color-background" d="M45,0 L26,0 C25.447,0 25,0.447 25,1 L25,20 C25,20.379 25.214,20.725 25.553,20.895 C25.694,20.965 25.848,21 26,21 C26.212,21 26.424,20.933 26.6,20.8 L34.333,15 L45,15 C45.553,15 46,14.553 46,14 L46,1 C46,0.447 45.553,0 45,0 Z" id="Path" opacity="0.59858631"></path>
+                                                <path class="color-foreground" d="M22.883,32.86 C20.761,32.012 17.324,31 13,31 C8.676,31 5.239,32.012 3.116,32.86 C1.224,33.619 0,35.438 0,37.494 L0,41 C0,41.553 0.447,42 1,42 L25,42 C25.553,42 26,41.553 26,41 L26,37.494 C26,35.438 24.776,33.619 22.883,32.86 Z" id="Path"></path>
+                                                <path class="color-foreground" d="M13,28 C17.432,28 21,22.529 21,18 C21,13.589 17.411,10 13,10 C8.589,10 5,13.589 5,18 C5,22.529 8.568,28 13,28 Z" id="Path"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Account Info</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  " href="index.html">
+                        <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                            <svg width="12px" height="12px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>document</title>
+                                <g id="Basic-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Rounded-Icons" transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                                        <g id="Icons-with-opacity" transform="translate(1716.000000, 291.000000)">
+                                            <g id="document" transform="translate(154.000000, 300.000000)">
+                                                <path class="color-background" d="M40,40 L36.3636364,40 L36.3636364,3.63636364 L5.45454545,3.63636364 L5.45454545,0 L38.1818182,0 C39.1854545,0 40,0.814545455 40,1.81818182 L40,40 Z" id="Path" opacity="0.603585379"></path>
+                                                <path class="color-background" d="M30.9090909,7.27272727 L1.81818182,7.27272727 C0.814545455,7.27272727 0,8.08727273 0,9.09090909 L0,41.8181818 C0,42.8218182 0.814545455,43.6363636 1.81818182,43.6363636 L30.9090909,43.6363636 C31.9127273,43.6363636 32.7272727,42.8218182 32.7272727,41.8181818 L32.7272727,9.09090909 C32.7272727,8.08727273 31.9127273,7.27272727 30.9090909,7.27272727 Z M18.1818182,34.5454545 L7.27272727,34.5454545 L7.27272727,30.9090909 L18.1818182,30.9090909 L18.1818182,34.5454545 Z M25.4545455,27.2727273 L7.27272727,27.2727273 L7.27272727,23.6363636 L25.4545455,23.6363636 L25.4545455,27.2727273 Z M25.4545455,20 L7.27272727,20 L7.27272727,16.3636364 L25.4545455,16.3636364 L25.4545455,20 Z" id="Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="nav-link-text ms-1">Sign Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-content" id="panel" bis_skin_checked="1">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 mt-3 shadow-none border-radius-xl bg-success" id="navbarTop" style="background-color: navy">
+            <div class="container-fluid" bis_skin_checked="1">
+                
+                    <Strong style="color:white">Hello, Admin</Strong>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation" bis_skin_checked="1">
+                    <ul class="navbar-nav navbar-nav-hover ms-auto">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="account.html">
+                                    <i class="fa fa-cog fixed-plugin-button-nav" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto" bis_skin_checked="1">
+                                <div class="bg-white border-radius-lg d-flex me-2" bis_skin_checked="1">
+                                    <input type="text" class="form-control border-0 ps-3" placeholder="Type here...">
+                                    <button class="btn bg-gradient-primary my-1 me-1">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid pt-3" bis_skin_checked="1">
+            <div class="card mb-4" bis_skin_checked="1">
+                <div class="card-header pb-0" bis_skin_checked="1">
+                    <h6> User Adoption</h6>
+                    <p class="text-sm">
+                        <i class="fa fa-arrow-up text-success" aria-hidden="true"></i>
+                        <span class="font-weight-bold">4% more</span> in 2023</p>
+                </div>
+                <div class="card-body p-3" bis_skin_checked="1">
+                    <div class="chart" bis_skin_checked="1">
+                        <div class="chartjs-size-monitor" bis_skin_checked="1">
+                            <div class="chartjs-size-monitor-expand" bis_skin_checked="1">
+                                <div class="" bis_skin_checked="1"></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink" bis_skin_checked="1">
+                                <div class="" bis_skin_checked="1"></div>
+                            </div>
+                        </div>
+                        <div class="chartjs-size-monitor" bis_skin_checked="1">
+                            <div class="chartjs-size-monitor-expand" bis_skin_checked="1">
+                                <div class="" bis_skin_checked="1"></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink" bis_skin_checked="1">
+                                <div class="" bis_skin_checked="1"></div>
+                            </div>
+                        </div>
+                        <canvas id="chart-line" class="chart-canvas chartjs-render-monitor" height="375" width="1095" style="display: block; height: 300px; width: 876px; box-sizing: border-box;"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="row removable" bis_skin_checked="1">
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+                    <div class="card mb-4" bis_skin_checked="1">
+                        <div class="card-body p-3" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-8" bis_skin_checked="1">
+                                    <div class="numbers" bis_skin_checked="1">
+                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Profit</p>
+                                        <h5 class="font-weight-bolder mb-0">
+                                            $2.6M&nbsp; &nbsp; &nbsp; <span class="text-success text-sm font-weight-bolder">+55%</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end" bis_skin_checked="1">
+                                    <div class="icon icon-shape shadow text-center border-radius-md bg-gradient-dark" bis_skin_checked="1">
+                                        <i class="ni ni-money-coins text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+                    <div class="card mb-4" bis_skin_checked="1">
+                        <div class="card-body p-3" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-8" bis_skin_checked="1">
+                                    <div class="numbers" bis_skin_checked="1">
+                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Today's Online Bank Users</p>
+                                        <h5 class="font-weight-bolder mb-0">
+                                            2,300
+                                            <span class="text-success text-sm font-weight-bolder">+3%</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end" bis_skin_checked="1">
+                                    <div class="icon icon-shape shadow text-center border-radius-md bg-gradient-dark" bis_skin_checked="1">
+                                        <i class="ni ni-world text-lg opacity-10 text-default" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+                    <div class="card mb-4" bis_skin_checked="1">
+                        <div class="card-body p-3" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-8" bis_skin_checked="1">
+                                    <div class="numbers" bis_skin_checked="1">
+                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Onboarding Clients</p>
+                                        <h5 class="font-weight-bolder mb-0">
+                                            +3,462
+                                            <span class="text-danger text-sm font-weight-bolder">-2%</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end" bis_skin_checked="1">
+                                    <div class="icon icon-shape shadow text-center border-radius-md bg-gradient-dark" bis_skin_checked="1">
+                                        <i class="ni ni-paper-diploma text-lg opacity-10 text-default" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+
+                    <div class="card mb-4" bis_skin_checked="1">
+                        <div class="card-body p-3" bis_skin_checked="1">
+                            <div class="row" bis_skin_checked="1">
+                                <div class="col-8" bis_skin_checked="1">
+                                    <div class="numbers" bis_skin_checked="1">
+                                        <p class="text-sm mb-0 text-capitalize font-weight-bold">Sales</p>
+                                        <h5 class="font-weight-bolder mb-0">
+                                            $3.5M&nbsp;<span class="text-success text-sm font-weight-bolder">+5%</span>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="col-4 text-end" bis_skin_checked="1">
+                                    <div class="icon icon-shape shadow text-center border-radius-md bg-gradient-dark" bis_skin_checked="1">
+                                        <i class="ni ni-cart text-lg opacity-10" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" bis_skin_checked="1" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document" bis_skin_checked="1">
+                    <div class="modal-content" bis_skin_checked="1">
+                        <div class="modal-header" bis_skin_checked="1">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" bis_skin_checked="1">
+                            ...
+                        </div>
+                        <div class="modal-footer" bis_skin_checked="1">
+                            <button type="button" class="btn bg-gradient-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn bg-gradient-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row removable" bis_skin_checked="1">
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+
+                </div>
+                <div class="col-xl-3 col-sm-6" bis_skin_checked="1">
+
+                </div>
+            </div>
+            <div class="card mb-4" bis_skin_checked="1">
+                <div class="card-header pb-0" bis_skin_checked="1">
+                    <h6>Projects</h6>
+                </div>
+                <div class="card-body px-0 pt-0 pb-2" bis_skin_checked="1">
+                    <div class="table-responsive p-0" bis_skin_checked="1">
+                        <table class="table align-items-center justify-content-center mb-0">
+                            <thead>
+                                <tr>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Project</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Budget</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Status</th>
+                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Completion</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <img src="https://img.freepik.com/free-icon/development-progress_318-31445.jpg" class="avatar avatar-sm rounded-circle me-2">
+                                            </div>
+                                            <div class="my-auto" bis_skin_checked="1">
+                                                <h6 class="mb-0 text-sm">Branch Transofrmation</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="text-sm font-weight-bold mb-0">$50,000</p>
+                                    </td>
+                                    <td>
+                                        <span class="text-xs font-weight-bold">working</span>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <div class="d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                                            <span class="me-2 text-xs font-weight-bold">60%</span>
+                                            <div bis_skin_checked="1">
+                                                <div class="progress" bis_skin_checked="1">
+                                                    <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;" bis_skin_checked="1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <button class="btn btn-link text-secondary mb-0">
+                                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEUAAAD////09PTQ0NATExORkZHV1dUdHR3CwsLx8fH39/fk5OTu7u7n5+c+Pj76+vpKSkpqamrc3NylpaVeXl66urrIyMicnJysrKx8fHxVVVWEhIRbW1vS0tKysrKMjIw2NjYtLS11dXVGRkYlJSVsbGyfn58LCwtPT08pKSkQEBA5OTkxMTEZGRn10M8oAAAPRklEQVR4nM1d6VrqOhQtIFigiMyjgKiAiu//eldEpMPaU5pw7vrnZ5t20WRnz4kqN0Gr2W6M43j0gzge19rNqt8nNOv30QnLOPePyO9zCujUpvXh5vzwHPbPL2/11VPi5Tm767gvzcx/wjGsNqbbB8SsgIe3Qa0pD8hhmxmwnf5XGIbJaHFUkbvidbZqywMTmGTH+uim/uefYTLavhrZXbDvrZzmbDs/UC/1T88M+5NPR3YXfE7sn7JXGKVz/adPhv36c0l6Z2wmHflhKbSKQ6wDMEwmrnMT4XNq2ExicL93huOhR3pn9Grah+/A3VdZ44Nhd3Dnnd8J94OW6vl1cO91CpRnmCyC0DtjoZGtYRn23wLyO6HX/6cM+8vA/E4YShzDMWz7Fy8YPX6LDMWwGXp+prHl9NZADCdg2JCY3JjhGNpDQfGVN/xCMqwWFcFbYEjoOf4ZTm/O7YLpTRh2Hm9O7IoXpJN7ZujyATfz7WQwarSTpNnqtppJp92IV7vZUucCyAJ8Rq8Mq3Pb+7xuJ2NuM0vGA6u9PC+sRp8Mx5ZXWU5qOhOo1diZdIe80eGRIRoK43FntdT7kxf16PVADLsH5Qv0Rm6+0OpIq+Ye0q4mbwzbe9XD56OuPBaJ1kopqdNTxBND4CoAmJT373Z0ayGl4fhhOFA89IXUq4wYabaRq6LqhaHCjh82PPE7oaEQrlufDGU9dOvusMZoy88c+mMobvNvNgenDh2R44Mnhl3JjT2XXSlu6EuC9dj1wbArOLKfx4H4nSDZoa+t8gxbAkHG9vYCYe94rZZl2H1nH7AsGfdTIOGn6n2rJMMNO/woLLlf8AbbsRxDdutdeg7Fk0hYjfiwLsGQ3XcHoYmlgIIvLJQMt8wQr6G2CIym0R+gY8iJsSFzH4NWM2nqAkoFzPwz5KwJ2x7RGU/rvUN62znOe/Xp2KYJrXwz7DP36zf5Dp+VsVmM9DQbfhmC4PgflFp2czTTuMZfZ7FSKCd6p5WCIe01Oap2+WSq97tE0eNUNWhXPabMkDYIXzSvMjJ6HSOQkAah9eSIDEfkrXP5LRK0BWtQV/hAuB3MwDAh71yKr1Aq7v0mL3EdRYkhub2K22C/bFxYiPdWlBujwJDc6qUp2vYR1+9J+4fmK/IMC4lwFwhCpmVTO2is+edoxA3PkNqij/xzTToHj70gV2XvO8uQnKOspOtoff46DPn9Udz6OYYd6ibWmNB4jG1YcY+jhf0vOIaU2sDZ81W/H/CMIRcAkXRUhiHlMuCsCVNY0QAuO1FY9TTDLnHHG/MwfVjRih3zVD7QQDMkBP4r86iQuW095rms1U8ypLZCWspUrUn5NjzQi5GVNiRDwiSgnU7KuKk7vmgNhzYPaIY1fDmtjVrMblfQiiqjQ1EMiRgMOVOIX8Qz6MDkB3kPwZDwPZFemdsQZCiSL7C/XpNhiD8hOUdvMUXPIAUdZWZsMEPiE1JuIs4Z5xuUuKG27wVmiDcYnA9YqTTD8Snig3IjE/I0Na9TDPGkJm1CPuzmGxvqNeD+lva1RMK15BKwO9PKgZIGUEdJ23kRfympNoXTRSlQqj8QNhnZe2WIt09iiesypAC+3r9cbyU2rYI8uM+qCH8MsVSa4VGrji9ZP/1gHVd3KiFtssM95yXjH0McgyR2CkeD9zIhSFcXD8LT190NLpjGxTn3xxCKxnrh+h84uiyus8dxK6U2LhYXhlg/wQop6cnhkZbKT25DuGQ+XhhC9YfwW7rN0axy6eb4kGMKNEM4IP7J3Pyi+X3VjaJDessvQ6j8bOEdlCrIo2geuFF0ZgjjKVidcSoZRUM5rUXJ4U8xhCFtrAq6iJk91hucJKpZ2JwZwkmKnc4O0bMv6q1cKHJuTYYhzFX19VLvdAKNy4SwJiOfeaCRsJyxf8Ij55xv2usYORcqyRBahtClbv+EQsxRys8FMH7EH4ZIFd7Dy80x+oP0AmKOdQF4cvEMN2AcKJbFoFYemvQ3cz2jLWv3xBB6XKAHz2r36n5u69om7AGGITJn8SQ1vsoCDlKEde6bGSItBZq+RkVLr38o04AuMFUHnBgi0xAOYivhtuQQ21RB04YREcsQbWI23wUbhy/A5tmwJOFGeO7BXYyLZhVgtXNMPRosg0d4bCiuLMFeeyGNxTVisYQjvLqQQmMxDNUdkFKwWNaGOtVvhqgFEtpUDT5St1JEwwMMUySCn+YeXaqXd661lvrdSLvT/jBEXjaoi6hDMe6VGOqQ67OFIZr+yDGp1knLlJqoKep10wjqmkhQaFdJuXJZLUV9UXUERSly5iuXYdl6WeVa1GuEUWVTvB2q3brCo/IFzzqKjwaGYLOAZuuNCGop6hkiZROJUpXTyE89m2rFq1dDhN4chVs1j/VV86zRbtTPipDnGW0WCrXRX8mlwpegjrRF6Nug30cWpUS82Amy1c+5MmqD2Xp6WTERMonQchKdKWQ+iBPEnE7SCm5dTM39+TNHaPahVSxuFn4bY4iBcMpNmfboPpz29QhNeaQSSSkUBl1YBWlVvOPbcmLlm2KE3AfoVuGBRiemDFENhnfl977vpROhNBoHhqqqRBOkZQFvKqigAzVDrmj2BN+TVC5RQ/eA1atmKGUi2mOzEiTvG/K3AZdTLQLO2A9wr6S0OdbnM5Ccs2jhgy1tEIGBkA9DlN5lepghiH4vtKWBvO9ZBLQHJIhFxdunRnOCWMuIQufovdA6RPljckaw31Y8smaK1iFkCCq5kNSQZOk3lv56gfQV+bnoPnDZAllPT8qbC3g9HB7TEAPAv3h8yOBF1TpBzbAof/DmrXloHjgIWYRTW34wDppo9agoJeEnFPVShDslQ5fG0kgcIk1vFxVCSoTEsHS5uAVDtALQlrY6feyM04ASiS6dBEIyRPYhyoUZ/Uzn/p+W+0wGjVwS9kIyRDY+9Ff8Ltja7H6//9oy7h2XHtAhGWp9SX3PHVpvxxB9DKQmJGqGLkl2IRkitRQGKAy+4/8XQzQOyK66M3RKdjiqKiBDGLcANcmfBoYOwjQgQ6Q7owBFz8DQlGsSnCGKH6LYY93A0JyXGJQhsvDRhray9GS3nzoWjiFslYOM5oaFob2DUDiG0LWHUilMffXte344hmi/R4Lm3cRQYebfjCHye6E44Zvt9Adz6W8whtB3ifLzdjaG5pKuYAxhbiIqqRvbGJor8IMxhPml6MLEeEaJ1QoOxRBGR9F+f2ocZGJolaahGEIzlspWN+a9/z8YwkGQQjIyMzTWWwRiCF1JZG8FG0OjbhqIIQw3o73ix+NoLDu11X6EYYgLcTbgypkDQ1uvgDAMYdIHfLGRA0NbUYnWq2/yp+MiUhgxrrowtH1E5aCmMXHeDmqqdvZ0mMu/TStRF28zlW3iVQgzNqduDE1eRV0dnalcBldNQ20rcWNo80ipRrQMiHM+YEXWb5TQpUmBAZracktpHiG7oJwZODM0Od3kPBvTHMUp+jhvo+nM0GYJz/mcxY7JXiEqumB27yXfwoWhMYQxn8YNjPHU2PuUaM4Ao+QXK5lI8UvOIBIO/bdF1oFIs8bL5vJfwLCWOvuU6BN162ZtZ1Ad4WHTgj9/Y4Fh9uQhItPJ7nbzAaI2Fn/Cv+hbnmFevyDKGkJ1f+ZABaih3n6NTeUYFgxAKmH81ker0ykUWChcf44cw2KMkVItQ3aARqDSO/FemMq2yTIEk48soQrbAzoP8tQCrESm8hiyDNH2S9XVV0N3gU5jT7WJJay51BVZhvBqqrzfsTegE0jFCKdqpddshqGtwecN2+ySBIlAQ+arpf8g+ouReVK36gVNGtJEnCEjdjMMqTemHnAjirSngOhvmLlGxZDuJfJve7ITczSrvqoYMn1Kgq/Fe7oFHWHj5EoNdAyZmtSqvVmXBczZCNSOnAsuKhl+0s8JamhwvXYIh1E+iVvJkO1p5doXWAZ3RgnlTMnLJS1DtsjXuTO0AJxxfgblaCh8CjVDtng6yFlBS67QqEvFOgoamJ4hXwbr37HBF2tTP2lR6hsY8uVpiV+Bs+T7lFI+VpDBb2Aode+64blrloPTLAylPgZdpwa8AJIbmVwSSByaGLLC7YSOrWcdxlZqpEs63XHHEhNDuQNUvyxH+QxLem+C7l0jQ0WTq7axCWIGinNIaYJ48VoZihP1G4nr4RdrRaNnOi5E+HbNDHVtU2J7mdRQ1fqJLt2hVGc7Q2XLx+rKskHOV7qDqxk3LWX+ODBUV/y24pkmN/x+Fmt7WTKJ2OTUcmFoqdsWzlafr8GZGyQYLzT9qzsxjF5s1ffteLddZog+H94mq4atgzx3sjpjR7oxjD6c6rZbPzFJS3vVFLhgENf9x5Gh44koJcDtQPfcj+bM0Nz9vRSqbBkyO9vdGUZfrk087eCdCPyKKcEwRMsWiC6v6wo/dCmG0fMtPmNMn1R5gqRjiQwF9Wvhu2tLHk3hBUQlUmRYk4q4bX27rZCi6bKWLDKMxTr1h3BTNZZyaxVmgIKhnMgmW61OqIld8DRNtTUMFbkl27KtZ4t4km0TlWKlYqiJML3567/z8ypyp5E7nVqrY1jpKFrILF0asWOsFKXxn0r9Vsmw0tWclfI6cNSqM+ionCBqpVHLUJvKuy37IWOda0B/EoueodqnvXbePbqxthJA387bwrDS59WnKz5mDh2Fqyu19+rZIrktDCtdgwdtvmvoFbrqeK1rF/4D29FrJobWPjwv65GsC7Tj9cY0qvH0EyPDStt8WPVDbzdqgGnV7fTj3Zu5wdaD9XhAK0P3qP3dS2+73c5m2+3b8HB0Tfuz9y60M6z07Q0yfGHjoAA7MPwXh3Kf4dQS3YlhpRMiM0HC0K0ZsxvDb9XDqddhCTy7Nu13ZXjrXHZ3T4I7w0rT3rDGFbbzAL0xrFQS85GWTljoIm8hGJYMaeuwLsUvxxDlw0oLPAk7V9elLc4MQ1RsKjsnWsFkzt3Agzc2mxMNtBXVKEqz1Yahn0NdsgyKSU1aS6XjOcn0OPB12EKWYTG736AIPvlK+or2C4+Ou9wszC8p45EH41n5UqF7dy8IRH6dZXc4qmqTQb9uPsE4hYeJX7drBdSQpqea8XzoC7pjNv+CwnERl9z6IIqycnzxxr4bHFoFVMd1Q4XiV29XC8HuBLQbtHeL5WziIdrSrA0WB95efp+vp08+/MgkXOrxjWg1G/Fqsp5th4+fx/f7983DYbmdrXeruN8MHV/9xn9n3+C5zJg3jQAAAABJRU5ErkJggg==" class="avatar avatar-sm rounded-circle me-2">
+                                            </div>
+                                            <div class="my-auto" bis_skin_checked="1">
+                                                <h6 class="mb-0 text-sm">Bank Upgrades</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="text-sm font-weight-bold mb-0">$12,200</p>
+                                    </td>
+                                    <td>
+                                        <span class="text-xs font-weight-bold">done</span>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <div class="d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                                            <span class="me-2 text-xs font-weight-bold">100%</span>
+                                            <div bis_skin_checked="1">
+                                                <div class="progress" bis_skin_checked="1">
+                                                    <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;" bis_skin_checked="1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <img src="https://static.vecteezy.com/system/resources/previews/005/350/134/original/software-testing-black-glyph-icon-improving-performance-preventing-implementation-bugs-handle-programming-glitches-defect-clustering-silhouette-symbol-on-white-space-isolated-illustration-vector.jpg" class="avatar avatar-sm rounded-circle me-2">
+                                            </div>
+                                            <div class="my-auto" bis_skin_checked="1">
+                                                <h6 class="mb-0 text-sm">Resolve App Bugs</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="text-sm font-weight-bold mb-0">$3,400</p>
+                                    </td>
+                                    <td>
+                                        <span class="text-xs font-weight-bold">working</span>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <div class="d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                                            <span class="me-2 text-xs font-weight-bold">30%</span>
+                                            <div bis_skin_checked="1">
+                                                <div class="progress" bis_skin_checked="1">
+                                                    <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30" style="width: 30%;" bis_skin_checked="1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <img src="https://cdn-icons-png.flaticon.com/512/2942/2942577.png" class="avatar avatar-sm rounded-circle me-2">
+                                            </div>
+                                            <div class="my-auto" bis_skin_checked="1">
+                                                <h6 class="mb-0 text-sm">Sustainable Finance</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="text-sm font-weight-bold mb-0">$1,000</p>
+                                    </td>
+                                    <td>
+                                        <span class="text-xs font-weight-bold">canceled</span>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <div class="d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                                            <span class="me-2 text-xs font-weight-bold">0%</span>
+                                            <div bis_skin_checked="1">
+                                                <div class="progress" bis_skin_checked="1">
+                                                    <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0" style="width: 0%;" bis_skin_checked="1">progress-bar bg-gradient-dangerprogress-bar bg-gradient-dangerprogress-bar bg-gradient-dangerprogress-bar bg-gradient-danger</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex px-2" bis_skin_checked="1">
+                                            <div bis_skin_checked="1">
+                                                <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/internet-network-technology/digital-icon.png" class="avatar avatar-sm rounded-circle me-2">
+                                            </div>
+                                            <div class="my-auto" bis_skin_checked="1">
+                                                <h6 class="mb-0 text-sm">Digital Integration Project</h6>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="text-sm font-weight-bold mb-0">$14,000</p>
+                                    </td>
+                                    <td>
+                                        <span class="text-xs font-weight-bold">working</span>
+                                    </td>
+                                    <td class="align-middle text-center">
+                                        <div class="d-flex align-items-center justify-content-center" bis_skin_checked="1">
+                                            <span class="me-2 text-xs font-weight-bold">80%</span>
+                                            <div bis_skin_checked="1">
+                                                <div class="progress" bis_skin_checked="1">
+                                                    <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80" style="width: 80%;" bis_skin_checked="1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">
+                                        <button class="btn btn-link text-secondary mb-0" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-v text-xs" aria-hidden="true"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="page__footer">
+            <span class="logo"><img src="logo.png" width=140px height=70px/></span>
+            <span style="text-align: center;">Copyright &#169 SE International Bank</span>
+            <span style="width:330px; height:auto">
+          </span>
+          </footer>
+    </div>
+    
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/popper.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/chartjs.min.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/plugins/Chart.extension.js"></script>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/soft-ui-dashboard.min.js?v=1.0.2"></script>
+    <script>
+        if (document.querySelector("#chart-bars")) {
+           	var ctx = document.getElementById("chart-bars").getContext("2d");
+           	new Chart(ctx, {
+              type: "bar",
+              data: {
+                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                  label: "Sales",
+                  tension: 0.4,
+                  borderWidth: 0,
+                  borderRadius: 4,
+                  borderSkipped: false,
+                  backgroundColor: "#fff",
+                  data: [450, 200, 100, 220, 500, 100, 400, 230, 500],
+                  maxBarThickness: 6
+                }, ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                },
+                interaction: {
+                  intersect: false,
+                  mode: 'index',
+                },
+                scales: {
+                  y: {
+                    grid: {
+                      drawBorder: false,
+                      display: false,
+                      drawOnChartArea: false,
+                      drawTicks: false,
+                    },
+                    ticks: {
+                      suggestedMin: 0,
+                      suggestedMax: 500,
+                      beginAtZero: true,
+                      padding: 15,
+                      font: {
+                        size: 14,
+                        family: "Open Sans",
+                        style: 'normal',
+                        lineHeight: 2
+                      },
+                      color: "#fff"
+                    },
+                  },
+                  x: {
+                    grid: {
+                      drawBorder: false,
+                      display: false,
+                      drawOnChartArea: false,
+                      drawTicks: false
+                    },
+                    ticks: {
+                      display: false
+                    },
+                  },
+                },
+              },
+            });
+        
+           };
+           if (document.querySelector("#chart-line")) {
+           	var ctx2 = document.getElementById("chart-line").getContext("2d");
+           	var gradientStroke1 = ctx2.createLinearGradient(0, 230, 0, 50);
+           	gradientStroke1.addColorStop(1, "rgba(203,12,159,0.2)");
+           	gradientStroke1.addColorStop(0.2, "rgba(72,72,176,0.0)");
+           	gradientStroke1.addColorStop(0, "rgba(203,12,159,0)");
+           	var gradientStroke2 = ctx2.createLinearGradient(0, 230, 0, 50);
+           	gradientStroke2.addColorStop(1, "rgba(20,23,39,0.2)");
+           	gradientStroke2.addColorStop(0.2, "rgba(72,72,176,0.0)");
+           	gradientStroke2.addColorStop(0, "rgba(20,23,39,0)");
+           	new Chart(ctx2, {
+              type: "line",
+              data: {
+                labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                datasets: [{
+                    label: "Websites",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "#cb0c9f",
+                    borderWidth: 3,
+                    backgroundColor: gradientStroke1,
+                    fill: true,
+                    data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+                    maxBarThickness: 6
+        
+                  },
+                  {
+                    label: "Mobile App",
+                    tension: 0.4,
+                    borderWidth: 0,
+                    pointRadius: 0,
+                    borderColor: "#3A416F",
+                    borderWidth: 3,
+                    backgroundColor: gradientStroke2,
+                    fill: true,
+                    data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+                    maxBarThickness: 6
+                  },
+                ],
+              },
+              options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                  legend: {
+                    display: false,
+                  }
+                },
+                interaction: {
+                  intersect: false,
+                  mode: 'index',
+                },
+                scales: {
+                  y: {
+                    grid: {
+                      drawBorder: false,
+                      display: true,
+                      drawOnChartArea: true,
+                      drawTicks: false,
+                      borderDash: [5, 5]
+                    },
+                    ticks: {
+                      display: true,
+                      padding: 10,
+                      color: '#b2b9bf',
+                      font: {
+                        size: 11,
+                        family: "Open Sans",
+                        style: 'normal',
+                        lineHeight: 2
+                      },
+                    }
+                  },
+                  x: {
+                    grid: {
+                      drawBorder: false,
+                      display: false,
+                      drawOnChartArea: false,
+                      drawTicks: false,
+                      borderDash: [5, 5]
+                    },
+                    ticks: {
+                      display: true,
+                      color: '#b2b9bf',
+                      padding: 20,
+                      font: {
+                        size: 11,
+                        family: "Open Sans",
+                        style: 'normal',
+                        lineHeight: 2
+                      },
+                    }
+                  },
+                },
+              },
+            }); 
+           };
+    </script>
+</body>

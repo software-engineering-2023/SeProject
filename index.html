@@ -1,0 +1,147 @@
+<!DOCTYPE >
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SE Online Bank</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body onload="generate()"> 
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <span class="logo"><img src="logo.png" width=180px height=80px/></span>
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+      <div class="buttonContainer">
+        <button id="navButtons" onclick="window.location.href='login.html'">Login</button>
+        <button id="navButtons" onclick="window.location.href='register.html'">Register</button></li>
+      </div>
+    </header>
+    <main>
+      <section id="section1" data-nav="Section 1" class="main_hero your-active-class">
+      <header id="section1" data-nav="Section 1" class="main_hero your-active-class">
+        <div id="main-text-wrapper">
+          <h1 >Explore Personal Banking</h1>
+          <p>Do you want your bank to match your lifestyle? Open your account to find the financial solutions you need in your everyday life!</p>
+        </div>
+      </header>
+    </section>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section>
+        <div id="section0">
+          <div id="section0text">
+            <h5>LIFE GOALS</h5>
+            <h3>Fulfill your life goals with SE Bank</h3>
+            <h4>Whatever you goal, you can accomplish it with SE</h4>
+          </div>
+          <div id="icons">
+              <div id="iconItem">
+                <img src="money.png" height="30px" width="30px"/>
+                <h3>Become a millionaire</h3>
+                <p>Make your money work for you and grow your funds over the years.</p>
+              </div>
+              <div id="iconItem">
+                <img src="home.png" height="30px" width="30px"/>
+                  <h3>Buy a home</h3>
+                  <p>Start your family life on solid ground. Buy your own home and settle into you future.</p>
+         
+              </div>
+              <div id="iconItem">
+                <img src="installment.png" height="30px" width="30px"/>
+                <h3>Pay in Installments</h3>
+                  <p>Life is short; buy all you desire with easy payment plans.</p>
+              </div>
+              <div id="iconItem">
+                <img src="points.png" height="30px" width="30px"/>
+                <h3>Get Points as Reward</h3>
+                  <p>Earn, Redeem, Repeat: Unlock Rewards at Every Transaction!</p>
+              </div>
+              <div id="iconItem">
+                <img src="bill.png" height="30px" width="30px"/>
+                <h3>Bill Management</h3>
+                  <p>Streamline your payments, unlock peace of mind!</p>
+              </div>
+          </div>
+        </div>
+      </section>
+    <section id="section2" data-nav="Section 2" class="your-active-class">
+        <div class="landing_container" id="aboutUs">
+          <div id="text-container">
+            <h2>About Us</h2>
+            <div id="subSections">
+            <h3>Who are we</h3>
+            <p id="about-us">
+              SE bank is an international leading private-sector bank, offering a full range of financial products and services to enterprises of all sizes, institutions, households, and individuals.
+            </p>
+            </div>
+            <div id="subSections">
+            <h3>What we do</h3>
+            <p id="about-us">
+              At SE Bank, we are committed to delivering modern and convenient banking solutions tailored to meet your financial needs. As an online bank, we leverage technology to provide a seamless and secure banking experience.
+            </p>
+          </div>
+          </div>
+          <div id="deal">
+            <img src="deal.jpg" style="border-radius: 5px;"/>
+          </div>
+        </div>
+      </section>
+      <section id="section3" data-nav="Section 2" class="your-active-class">
+        <div id="address-wrapper">
+            <div id="address-information">
+             
+                <p>Contact Us</p>
+                <h3>Visit Us in the Nearest Branch</h3>
+                <div id="map"></div>
+            </div>
+            <div id="contact">
+                <p> </p>
+                <h3>Get In Touch</h3>
+                <p> </p>
+                <form  id="myForm" ">
+                  <input type="text" placeholder="Name" required>
+                  <input type="text" placeholder="Phone" required>
+                  <input type="text" placeholder="Subject" required>
+                  <input type="email" placeholder="E-mail" required>
+                  <textarea class="input-box" spellcheck="true" required placeholder="Message"></textarea>
+                  <div class="captcha-container">
+                    <div id="captchaCode" selectable="False"></div>
+                    <div id="regenerateIcon" onclick="generate()">
+                      <img src="regenerate.png" height="50px" width="50px"/>
+                    </div>
+                  </div>
+                    <input id="captcha" type="text" required placeholder="Captcha Code"></input>
+          
+                  <input id="Submit" type="submit" value="Submit Now">
+                 
+                </form>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="page__footer">
+      <span class="logo"><img src="logo.png" width=140px height=70px/></span>
+      <span style="text-align: center;">Copyright &#169 SE International Bank</span>
+      <span style="width:330px; height:auto">
+      <span><img src="apple.svg" height="70px" width="140px" style="padding: 0; margin-left: 25%;"/></span>
+      <span><img src="android.svg" height="70px"width="140px" wid style="padding: 0; "/></span>
+    </span>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+  <script src="mapdata.js"></script>
+    <script src="countrymap.js"></script>
+</html>

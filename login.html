@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Online Banking Login</title>
+  </head>
+  <body onload="generate()">
+    <header class="page__header">
+      <span class="logo"
+        ><img src="logo.png" width="220px" height="100px"
+      /></span>
+    </header>
+    <section id="login" >
+        <div id="loginContainer">
+      <form id="loginFrom" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <div class="captcha-container">
+            <div id="captchaCode" selectable="False"></div>
+            <div id="regenerateIcon" onclick="generate()">
+              <img src="regenerate.png" height="50px" width="50px"/>
+            </div>
+          </div>
+            <input id="captcha" type="text" required placeholder="Captcha Code"></input>
+        <input type="submit" id="Submit" value="Login" />
+        <a onclick="showPopup()" style="color: navy; font-weight: bold;margin-right: 27px; text-decoration: underline; cursor: pointer;">Forgot your Pasword</a>
+        <a href="register.html" style="color: navy; font-weight: bold; margin-left: 27px;">New User?</a>
+        
+ 
+      </form>
+      <div class="overlay" id="overlay"></div>
+
+      <div class="popup" id="popup">
+        <h2 style="font-size: 40px;">Reset Your Password <img src="close.png" onclick="hidePopup()" style="cursor: pointer;" width="35px" height="35px"/></h2>
+        <form>
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+    
+          <label for="new-password">New Password:</label>
+          <input type="password" id="new-password" required>
+    
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" required>
+    
+          <label for="confirm-password">Card Number:</label>
+          <input type="password" id="confirm-password" required>
+    
+          <label for="confirm-password">Card Pin:</label>
+          <input type="password" id="confirm-password" required>
+
+          <button type="submit">Reset</button>
+        </form>
+        
+      </div>
+    </div>
+    </div>
+    </section>
+    <footer class="page__footer">
+        <span class="logo"><img src="logo.png" width=140px height=70px/></span>
+        <span style="text-align: center;">Copyright &#169 SE International Bank</span>
+        <span style="width:330px; height:auto">
+        <span><img src="apple.svg" height="70px" width="140px" style="padding: 0; margin-left: 25%;"/></span>
+        <span><img src="android.svg" height="70px"width="140px" wid style="padding: 0; "/></span>
+      </span>
+      </footer>
+  </body>
+  <script src="login.js"></script>
+</html>

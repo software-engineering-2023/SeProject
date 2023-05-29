@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Multi-step form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="body">
+      <div class="mainContainer">
+        <!-- Sidebar start -->
+        <div class="sidebar">
+          <div class="sidebarItem">
+            <div class="step">
+              <i class="bi bi-1-circle active" id="one"></i>
+            </div>
+            <div class="stepDesc">
+              Step 1 <br />
+              <b>Personal information</b>
+            </div>
+          </div>
+          <div class="sidebarItem">
+            <div class="step">
+              <i class="bi bi-2-circle" id="two"></i>
+            </div>
+            <div class="stepDesc">
+              Step 2 <br />
+              <b>Upload Official Documents</b>
+            </div>
+          </div>
+          <div class="sidebarItem">
+            <div class="step">
+              <i class="bi bi-3-circle" id="three"></i>
+            </div>
+            <div class="stepDesc">
+              Step 3 <br />
+              <b>Set Login Credentials</b>
+            </div>
+          </div>
+          <div class="sidebarItem">
+            <div class="step">
+              <i class="bi bi-4-circle" id="four"></i>
+            </div>
+            <div class="stepDesc">
+              Step 4 <br />
+              <b>Summary & Verfication</b>
+            </div>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="form visible" id="step1">
+            <div class="title">Personal info</div>
+            <div class="instructions">
+              Please provide your name, email address, phone number, and
+              Official ID.
+            </div>
+            <div class="formInputs">
+              <form>
+                Name
+                <input type="text" required placeholder="e.g. Stephen King" />
+                Email Address
+                <input
+                  type="email"
+                  required
+                  placeholder="e.g. Stephenking@lorem.com"
+                />
+                Phone Number
+                <input
+                  type="text"
+                  required
+                  placeholder="e.g. +1 234 567 890"
+                  pattern="\+[0-9]*"
+                  oninvalid="this.setCustomValidity('Please enter valid number starting with + and including numbers only !')"
+                  oninput="this.setCustomValidity('')"
+                />
+                National ID/ Passport Number
+                <input
+                  type="text"
+                  placeholder="Official Document ID"
+                  required
+                  pattern="[0-9]*"
+                  oninvalid="this.setCustomValidity('Please enter numbers only!')"
+                  oninput="this.setCustomValidity('')"
+                />
+                <button type="button" onclick="nextStep('step1', 'step2')">
+                  Next Step
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step2">
+            <div class="title">Required Documents</div>
+            <div class="instructions">
+              Please upload your National ID Front/Back.
+            </div>
+            <div class="formInputs">
+              <form>
+                Front of National ID
+                <input
+                  type="file"
+                  required
+                  placeholder="Upload the front of your National ID"
+                  accept="image/*"
+                />
+                Back of National ID
+                <input
+                  type="file"
+                  required
+                  placeholder="Upload the Back of your National ID"
+                  accept="image/*"
+                />
+                <button type="button" onclick="nextStep('step2', 'step3')">
+                  Next Step
+                </button>
+                <button
+                  id="back"
+                  type="button"
+                  onclick="backStep('step2', 'step1')"
+                >
+                  Go Back
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step3">
+            <div class="title">Login Credentials</div>
+            <div class="instructions">Please choose username and password.</div>
+            <div class="formInputs">
+              <form>
+                Username
+                <input type="text" required placeholder="username" />
+                Password
+                <input
+                  type="password"
+                  id="password"
+                  required
+                  placeholder="password"
+                />
+                Confirm Password
+                <input
+                  type="password"
+                  required
+                  id="confirmPassword"
+                  placeholder="re-enter chosen password"
+                />
+                <div id="passwordError" style="color: red"></div>
+                <button
+                  type="button"
+                  onclick="validatePasswords('step3', 'step4')"
+                >
+                  Next Step
+                </button>
+                <button
+                  id="back"
+                  type="button"
+                  onclick="backStep('step3', 'step2')"
+                >
+                  Go Back
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="form" id="step4">
+            <div class="title">Confirmation</div>
+            <div class="instructions">
+              Please review the information and confirm your registration.
+            </div>
+            <div class="formInputs">
+              <form>
+                <div id="confirmation">
+                  <strong>Name:</strong> <span id="name"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>Email Address:</strong> <span id="email"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>Phone Number:</strong> <span id="phone"></span>
+                </div>
+                <div id="confirmation">
+                  <strong>National ID:</strong> <span id="nationalId"></span>
+                </div>
+                <div id="confirmation">
+                  <input type="checkbox" required id="termsCheckbox" />
+                  <label for="termsCheckbox"
+                    >I hereby confirm that all information given above is true
+                    and complete.</label
+                  >
+                </div>
+                <button type="button" onclick="submitForm()">Confirm</button>
+                <button type="button" onclick="backStep('step4', 'step3')">
+                  Go Back
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="register.js"></script>
+</html>

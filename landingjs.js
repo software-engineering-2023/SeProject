@@ -1,7 +1,7 @@
 
 
 function bill(){
-  window.location.href = "Bill.html"; 
+  window.location.href = "bills.html"; 
 }
 
 let slideIndex = 0;
@@ -53,15 +53,18 @@ function logout(){
 }
 
 function loan(){
-  window.location.href = "LoanHtml.html"; 
+  window.location.href = "loans.html"; 
 }
 
 function report(){
-  window.location.href = "Report_Technical_Issues.html"; 
+  window.location.href = "reportSubmission.html"; 
+}
+
+function credit(){
+  window.location.href = "creditcards.html";
 }
 
 
-// const container = document.querySelector('.transaction-container');
 // const transactionWrapper = document.querySelector('.transaction-wrapper');
 // const filterSelect = document.getElementById('transaction-type');
 // const filterDate = document.getElementById('transaction-date');
@@ -233,3 +236,19 @@ function updateSlideVisibility() {
 // Initial update of arrow visibility
 updateSlideVisibility();
 
+// Close the dropdown menu when clicking outside of it
+// Get the dropdown menu and bell icon elements
+// Get the dropdown menu and dropdown container elements
+const dropdownMenu = document.querySelector('.dropdown-menu');
+const dropdownContainer = document.querySelector('.dropdown');
+
+// Add event listeners for hover
+dropdownContainer.addEventListener('mouseenter', function() {
+  // Add the 'show' class to display the dropdown menu
+  dropdownMenu.style.display='block';
+});
+
+dropdownContainer.addEventListener('mouseleave', function() {
+  // Remove the 'show' class to hide the dropdown menu
+  dropdownMenu.style.display='none';
+});

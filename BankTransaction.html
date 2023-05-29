@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SE Online Banking</title>
+  <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
+  <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
+  <link rel="stylesheet"
+    href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  
+  <link rel="stylesheet" href="./assets/css/theme.css">
+  <link rel="stylesheet" href="BankTransaction.css">
+</head>
+
+<body>
+  
+  <nav>
+    <div id="navimg">
+        <img src="logo.png" width="150px" height="80px">
+    </div>
+    <ul>
+        <li>
+            <img src="home.png" width="30px" height="30px">
+            
+        </li>
+    </ul>
+    <button id="logout" onclick="logout()">Log out</button>
+</nav>
+  <div class="accountname">
+    <div id="acc">Account Number:123456</div>
+    <span id="changebal">Current Balance=3000$</span>
+  </div>
+  <div class="maketransdiv">
+    <button id="maketrans">Want to make a transaction</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="maketransdivv" id="maketransdivv" style="display: none;">
+    <br>
+    <form id="issue-report-form">
+      <label for="report-type">Transaction Type:</label>
+      <select id="report-type" name="report-type" required>
+        <option value="" selected disabled>Choose a Type</option>
+        <option value="stolen-lost-card">between ur accounts </option>
+        <option value="account-issue">Account Associated with SE</option>
+        <option value="transaction-issue">Local Account outside SE</option>
+        <option value="customer-service-dispute">International</option>
+      </select>
+
+
+
+      <div id="account-fields" style="display: none;">
+        <label for="description" id="labell">Purpose:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        <label for="account-number" id="labell">Account Number:</label>
+        <input type="text" id="account-number" name="account-number">
+        <label for="account-number" id="labell">Amount:</label>
+        <input type="text" id="account-number" name="account-number">
+      </div>
+
+      <div id="transaction-fields" style="display: none;">
+        <label for="description" id="labell">Purpose:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        <label for="transaction-number" id="labell">Transaction Number:</label>
+        <input type="text" id="transaction-number" name="transaction-number">
+
+        <label for="account-number" id="labell">Recipient Number:</label>
+        <input type="text" id="account-number" name="account-number">
+        <label for="account-number" id="labell">Amount:</label>
+        <input type="text" id="account-number" name="account-number">
+      </div>
+
+      <div id="customer-service-fields" style="display: none;">
+
+        <label for="description" id="labell">Purpose:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+        <label for="employee-name" id="labell">IBAN</label>
+        <input type="text" id="employee-name" name="employee-name">
+        <label for="full-name" id="labell">Country:</label>
+        <input type="text" id="full-name" name="full-name">
+
+        <label for="card-number" id="labell">City:</label>
+        <input type="text" id="card-number" name="card-number">
+
+        <label for="account-number" id="labell">Amount:</label>
+        <input type="text" id="account-number" name="account-number">
+      </div>
+
+      <div id="stolen-lost-card-fields" style="display: none;">
+        <label for="full-name" id="labell">Country:</label>
+        <input type="text" id="full-name" name="full-name">
+
+        <label for="card-number" id="labell">City:</label>
+        <input type="text" id="card-number" name="card-number">
+      </div>
+      <button type="submit" id="buttomen">Submit</button>
+    </form>
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
+  </div>
+
+  <!-- <br>
+<br>
+<br>
+<br> -->
+  <div id="wrapper">
+    <ha1>Transactions:</ha1>
+    <div class="filter-container">
+      <label for="transaction-type">Filter by Type:</label>
+      <select id="transaction-typee">
+        <option value="all">All</option>
+        <option value="credit">Credit</option>
+        <option value="debit">Debit</option>
+      </select>
+      <label for="transaction-location">Filter by Location:</label>
+      <select id="transaction-locationn">
+        <option value="all">All</option>
+        <option value="Cairo">Cairo</option>
+        <option value="Alex">Alex</option>
+      </select>
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDatee">
+      <label for="endDate">End Date:</label>
+      <input type="date" id="endDatee">
+
+      <button id="filterButtonn">Filter</button>
+      <div id="message" class="hidden" style="color: red;"></div>
+
+    </div>
+    <div class="transaction-wrapperr">
+      <div class="transaction">
+        <span class="datee">TRANSACTION DATE</span>
+        <span class="amountt">TRANSACTION AMOUNT</span>
+        <span class="locationn">LOCATION</span>
+        <span class="typee">TRANSACTION TYPE</span>
+      </div>
+      <div class="transactionn hidden" id="newtrans">
+        <span class="date">May 30, 2023</span>
+        <span class="amount "id="neg">-$1000.00</span>
+        <span class="location">Cairo</span>
+        <span class="type">Debit</span>
+      </div>
+      <div class="transactionn">
+        <span class="date">May 23, 2023</span>
+        <span class="amount">+$100.00</span>
+        <span class="location">Cairo</span>
+        <span class="type">Credit</span>
+      </div>
+      <div class="transactionn">
+        <span class="date">May 22, 2023</span>
+        <span class="amount" id="neg">-$50.00</span>
+        <span class="location">Cairo</span>
+        <span class="type">Debit</span>
+      </div>
+      <div class="transactionn">
+        <span class="date">May 21, 2023</span>
+        <span class="amount">+$200.00</span>
+        <span class="location">Alex</span>
+        <span class="type">Credit</span>
+      </div>
+      <div class="transactionn">
+        <span class="date">May 23, 2023</span>
+        <span class="amount">+$100.00</span>
+        <span class="location">Cairo</span>
+        <span class="type">Credit</span>
+      </div>
+      <div class="transactionn">
+        <span class="date">May 22, 2023</span>
+        <span class="amount" id="neg">-$50.00</span>
+        <span class="location">Cairo</span>
+        <span class="type">Debit</span>
+      </div>
+    </div>
+
+  </div>
+  <script src="Transactions.js">
+  </script>
+  <footer>
+    <span>Banker Dashboard &copy; 2023</span>
+  </footer>
+</body>
+
+</html>

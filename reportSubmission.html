@@ -1,0 +1,319 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard Builder</title>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-icons.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/nucleo-svg.css">
+    <link rel="stylesheet" href="https://demos.creative-tim.com/soft-ui-dashboard/assets/css/soft-ui-dashboard.min.css?v=1.0.2">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+</head>
+<body class="g-sidenav-show">
+    
+    <div class="main-content" id="panel" bis_skin_checked="1">
+        <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 mt-3 shadow-none border-radius-xl bg-success" id="navbarTop" style="background-color: navy">
+            <div class="container-fluid" bis_skin_checked="1">
+                
+                    <Strong style="color:white">Hello, John</Strong>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation" bis_skin_checked="1">
+                    <ul class="navbar-nav navbar-nav-hover ms-auto">
+                        <div class="row" bis_skin_checked="1">
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="">
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <a class="cursor-pointer" href="">
+                                    <i class="fa fa-cog fixed-plugin-button-nav" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="col-auto m-auto" bis_skin_checked="1">
+                                <div class="dropdown" bis_skin_checked="1">
+                                    <a class="cursor-pointer" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa fa-bell" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-right px-2 py-3 ms-n4" aria-labelledby="dropdownMenuButton">
+                                        ...
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-auto" bis_skin_checked="1">
+                                <div class="bg-white border-radius-lg d-flex me-2" bis_skin_checked="1">
+                                    <input type="text" class="form-control border-0 ps-3" placeholder="Type here...">
+                                    <button class="btn bg-gradient-primary my-1 me-1">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="body">
+          
+    <h2>Online Bank Issue Report</h2>
+    
+    <form id="issue-report-form">
+        <label for="report-type">Report Type:</label>
+        <select id="report-type" name="report-type" required>
+            <option value="" selected disabled>Choose a Type</option>
+          <option value="stolen-lost-card">Lost/Stolen Card</option>
+          <option value="account-issue">Account Issue</option>
+          <option value="transaction-issue">Transaction Issue</option>
+          <option value="customer-service-dispute">Customer Service Dispute</option>
+          <option value="technical-issue">Technical Issue</option>
+        </select>
+        
+        
+        
+        <div id="account-fields" style="display: none;">
+            <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+          <label for="account-number">Account Number:</label>
+          <input type="text" id="account-number" name="account-number">
+        </div>
+        
+        <div id="transaction-fields" style="display: none;">
+            <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+          <label for="transaction-number">Transaction Number:</label>
+          <input type="text" id="transaction-number" name="transaction-number">
+          
+          <label for="transaction-date">Transaction Date:</label>
+          <input type="date" id="transaction-date" name="transaction-date">
+        </div>
+        
+        <div id="customer-service-fields" style="display: none;">
+
+            <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+          <label for="employee-name">Employee's Name:</label>
+          <input type="text" id="employee-name" name="employee-name">
+          
+          <label for="dispute-date">Dispute Date:</label>
+          <input type="date" id="dispute-date" name="dispute-date">
+        </div>
+        <div id="stolen-lost-card-fields" style="display: none;">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name">
+            
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number">
+          </div>
+        <div id="technical-fields" style="display: none;">
+            <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" cols="50"></textarea>
+            <label>Issue on:</label>
+            <label for="website-issue" style="display: inline;">
+                Website
+              <input type="checkbox" id="website-issue" name="website-issue">
+              
+            </label>
+            
+            <label for="app-issue" style="display: inline;">
+                App
+              <input type="checkbox" id="app-issue" name="app-issue">
+            </label>
+          </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+        </div>
+        <footer class="page__footer" style="position:fixed; bottom: 0; width: 97%; margin: auto;">
+            <span class="logo"><img src="logo.png" width=140px height=70px/></span>
+            <span style="text-align: center;">Copyright &#169 SE International Bank</span>
+            <span style="width:330px; height:auto">
+          </span>
+          </footer>
+    </div>
+    
+    <script src="https://demos.creative-tim.com/soft-ui-dashboard/assets/js/core/bootstrap.min.js"></script>
+
+</body>
+<style>
+    #issue-report-form{
+        padding-left: 40px;
+    }
+    #body{
+        width: 80%;
+        margin: auto;
+    }
+    #loanForm{
+        margin-left: 30px;
+    }
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+#type label{
+    display: inline-block;
+}
+input[type="file"]{
+    border: 1px solid black;
+    border-radius: 3px;
+    width: 40%;
+}
+select{
+    width: 20%;
+    height: 30px;
+}
+.amount label, .duration label{
+    display: inline-block;
+}
+h2 {
+  text-align: left;
+  color: navy;
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.container input{
+    width: 40%;
+}
+.container{
+    margin: 0;
+    display: flex;
+    padding: 0;
+}
+label,p {
+  display: block;
+  font-weight: bold;
+  font-size: large;
+  color: navy;
+}
+textarea{
+    width: 100%;
+}
+input {
+  width: 20%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+    background-color: lightgray;
+}
+
+</style>
+<script>
+var reportTypeSelect = document.getElementById("report-type");
+var accountFields = document.getElementById("account-fields");
+var transactionFields = document.getElementById("transaction-fields");
+var stolenLostCardFields = document.getElementById("stolen-lost-card-fields");
+var customerServiceFields = document.getElementById("customer-service-fields");
+var technicalFields = document.getElementById("technical-fields");
+
+reportTypeSelect.addEventListener("change", function() {
+  if (reportTypeSelect.value === "account-issue") {
+    accountFields.style.display = "block";
+    transactionFields.style.display = "none";
+    stolenLostCardFields.style.display = "none";
+    customerServiceFields.style.display = "none";
+    technicalFields.style.display = "none";
+    
+    // Set account number field as required
+    document.getElementById("account-number").setAttribute("required", "");
+  } else if (reportTypeSelect.value === "transaction-issue") {
+    accountFields.style.display = "none";
+    transactionFields.style.display = "block";
+    stolenLostCardFields.style.display = "none";
+    customerServiceFields.style.display = "none";
+    technicalFields.style.display = "none";
+    
+    // Set transaction number and date fields as required
+    document.getElementById("transaction-number").setAttribute("required", "");
+    document.getElementById("transaction-date").setAttribute("required", "");
+  } else if (reportTypeSelect.value === "stolen-lost-card") {
+    accountFields.style.display = "none";
+    transactionFields.style.display = "none";
+    stolenLostCardFields.style.display = "block";
+    customerServiceFields.style.display = "none";
+    technicalFields.style.display = "none";
+    
+    // Set full name and card number fields as required
+    document.getElementById("full-name").setAttribute("required", "");
+    document.getElementById("card-number").setAttribute("required", "");
+  } else if (reportTypeSelect.value === "customer-service-dispute") {
+    accountFields.style.display = "none";
+    transactionFields.style.display = "none";
+    stolenLostCardFields.style.display = "none";
+    customerServiceFields.style.display = "block";
+    technicalFields.style.display = "none";
+    
+    // Set employee name and dispute date fields as required
+    document.getElementById("employee-name").setAttribute("required", "");
+    document.getElementById("dispute-date").setAttribute("required", "");
+  } else if (reportTypeSelect.value === "technical-issue") {
+    accountFields.style.display = "none";
+    transactionFields.style.display = "none";
+    stolenLostCardFields.style.display = "none";
+    customerServiceFields.style.display = "none";
+    technicalFields.style.display = "block";
+    
+    // No fields to set as required for technical issue
+  } else {
+    accountFields.style.display = "none";
+    transactionFields.style.display = "none";
+    stolenLostCardFields.style.display = "none";
+    customerServiceFields.style.display = "none";
+    technicalFields.style.display = "none";
+    
+    // Remove required attribute from all fields
+    var fields = document.querySelectorAll("#issue-report-form [required]");
+    fields.forEach(function(field) {
+      field.removeAttribute("required");
+    });
+  }
+});
+document.getElementById("issue-report-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  
+  // Perform form validation here if needed
+  
+  // Display alert
+  alert("Report received. We will Try To Resolve It As Soon As Possible!");
+  
+  // Clear the form fields
+  reportTypeSelect.value = "";
+  document.getElementById("account-number").value = "";
+  document.getElementById("transaction-number").value = "";
+  document.getElementById("transaction-date").value = "";
+  document.getElementById("full-name").value = "";
+  document.getElementById("card-number").value = "";
+  document.getElementById("employee-name").value = "";
+  document.getElementById("dispute-date").value = "";
+  document.getElementById("website-issue").checked = false;
+  document.getElementById("app-issue").checked = false;
+});
+
+submitButton.addEventListener("click", function() {
+  // Manually trigger form submission
+  document.getElementById("issue-report-form").submit();
+});
+
+
+
+
+
+</script>
+</html>

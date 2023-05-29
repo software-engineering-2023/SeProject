@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="landingcss.css">
+</head>
+
+<body>
+    <nav>
+        <div id="navimg">
+            <img src="logo.png" width="150px" height="80px">
+        </div>
+        <ul>
+            <li>
+                <img src="home.png" width="30px" height="30px">
+
+            </li>
+            <li>
+                <div class="idkk col-auto m-auto" bis_skin_checked="1">
+                    <div class="dropdown">
+                        <a class="dropdown-toggle cursor-pointer" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="iconn.png" width="30px" height="30px">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <div class="dropdown-content">
+                            <p class="dropdown-text">Reminder to pay Water bill.</p>
+                            <p class="dropdown-text">New points were added to your account.</p>
+                          </div>
+                        </div>
+                      </div>
+            </li>
+        </ul>
+        </div>
+        <button id="logout" onclick="logout()">Log out</button>
+    </nav>
+    <div class="slider-container">
+        <div class="arrow arrow-left" onclick="previousSlide()">&#8249;</div>
+        <div class="slider">
+            <div class="slide">
+                <div class="image-container">
+                    <div class="currentB">
+                        <div class="leftdiv">
+                            <div class="accountname">
+                                <h3>Account Number:123456</h3>
+                                <p>Current Balance=3000$</p>
+                            </div>
+                        </div>
+                        <div class="rightdiv">
+                            <div class="accountname">
+                                Recent Transactions
+                            </div>
+                            <br>
+                            <div class="currentB1">
+                                <!-- <div class="filter-container">
+                                    <div class="tohavemer">
+                                        <label for="transaction-type">Filter by Type:</label>
+                                        <select id="transaction-type">
+                                            <option value="all">All</option>
+                                            <option value="credit">Credit</option>
+                                            <option value="debit">Debit</option>
+                                        </select>
+                                        <label for="startDate">Start Date:</label>
+                                        <input type="date" id="startDate">
+                                    </div>
+                                    <br>
+                                    <label for="transaction-location">Filter by Location:</label>
+                                    <select id="transaction-location">
+                                        <option value="all">All</option>
+                                        <option value="Cairo">Cairo</option>
+                                        <option value="Alex">Alex</option>
+                                    </select>
+                                    <label for="endDate">End Date:</label>
+                                    <input type="date" id="endDate">
+
+                                    <button id="filterButton">Filter</button>
+
+                                </div> -->
+                                <div class="transaction-container">
+                                    <div class="transaction-wrapper">
+                                        <div class="transaction">
+                                            <span class="datee">TRANSACTION DATE</span>
+                                            <span class="amountt">TRANSACTION AMOUNT</span>
+                                            <span class="locationn">LOCATION</span>
+                                            <span class="typee">TRANSACTION TYPE</span>
+                                        </div>
+                                        <div class="transaction">
+                                            <span class="date">May 23, 2023</span>
+                                            <span class="amount">+$100.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transaction">
+                                            <span class="date">May 22, 2023</span>
+                                            <span class="amount" id="neg">-$50.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Debit</span>
+                                        </div>
+                                        <div class="transaction">
+                                            <span class="date">May 21, 2023</span>
+                                            <span class="amount">+$200.00</span>
+                                            <span class="location">Alex</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transaction">
+                                            <span class="date">May 23, 2023</span>
+                                            <span class="amount">+$100.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transaction">
+                                            <span class="date">May 22, 2023</span>
+                                            <span class="amount" id="neg">-$50.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Debit</span>
+                                        </div>
+                                    </div>
+                                    <button id="Transactionbutton" type="button" onclick="viewtrans()">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="image-container">
+                    <div class="currentB">
+                        <div class="leftdiv">
+                            <div class="accountname">
+                                <h3>Account Number:123456</h3>
+                                <p>Current Balance=3000$</p>
+                            </div>
+                        </div>
+                        <div class="rightdiv">
+                            <div class="accountname">
+                                Recent Transactions
+                            </div>
+                            <br>
+                            <div class="currentB1">
+                                <!-- <div class="filter-container">
+                                    <div class="tohavemer">
+                                        <label for="transaction-type">Filter by Type:</label>
+                                        <select id="transaction-typee">
+                                            <option value="all">All</option>
+                                            <option value="credit">Credit</option>
+                                            <option value="debit">Debit</option>
+                                        </select>
+                                        <label for="startDate">Start Date:</label>
+                                        <input type="date" id="startDatee">
+                                    </div>
+                                    <br>
+                                    <label for="transaction-location">Filter by Location:</label>
+                                    <select id="transaction-locationn">
+                                        <option value="all">All</option>
+                                        <option value="Cairo">Cairo</option>
+                                        <option value="Alex">Alex</option>
+                                    </select>
+                                    <label for="endDate">End Date:</label>
+                                    <input type="date" id="endDatee">
+
+                                    <button id="filterButtonn">Filter</button>
+
+                                </div> -->
+                                <div class="transaction-container">
+                                    <div class="transaction-wrapperr">
+                                        <div class="transaction">
+                                            <span class="datee">TRANSACTION DATE</span>
+                                            <span class="amountt">TRANSACTION AMOUNT</span>
+                                            <span class="locationn">LOCATION</span>
+                                            <span class="typee">TRANSACTION TYPE</span>
+                                        </div>
+                                        <div class="transactionn">
+                                            <span class="date">May 23, 2023</span>
+                                            <span class="amount">+$100.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transactionn">
+                                            <span class="date">May 22, 2023</span>
+                                            <span class="amount" id="neg">-$50.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Debit</span>
+                                        </div>
+                                        <div class="transactionn">
+                                            <span class="date">May 21, 2023</span>
+                                            <span class="amount">+$200.00</span>
+                                            <span class="location">Alex</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transactionn">
+                                            <span class="date">May 23, 2023</span>
+                                            <span class="amount">+$100.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Credit</span>
+                                        </div>
+                                        <div class="transactionn">
+                                            <span class="date">May 22, 2023</span>
+                                            <span class="amount" id="neg">-$50.00</span>
+                                            <span class="location">Cairo</span>
+                                            <span class="type">Debit</span>
+                                        </div>
+                                    </div>
+                                    <button id="Transactionbutton" type="button" onclick="viewtrans()">View
+                                        More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="arrow arrow-right" onclick="nextSlide()">&#8250;</div>
+    </div>
+    <section>
+        <div id="section00">
+            <h1>Financial Management</h1>
+            <div id="iconss">
+
+                <div id="iconItemm" onclick="credit()">
+                    <img src="credit.png" height="30px" width="30px" />
+                    <h3>Credit Cards</h3>
+                </div>
+                <div id="iconItemm" onclick="loan()">
+                    <img src="loans.png" height="30px" width="30px" />
+                    <h3>Loans</h3>
+
+                </div>
+                <div id="iconItemm" onclick="report()">
+                    <img src="reports.png" height="30px" width="30px" />
+                    <h3>Report</h3>
+                </div>
+
+                <div id="iconItemm" onclick="bill()">
+                    <img src="bills.png" height="30px" width="30px" />
+                    <h3>Bills</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer">
+        <footer>
+            <p>Banker Dashboard &copy; 2023</p>
+        </footer>
+    </div>
+    <script src="landingjs.js">
+
+    </script>
+</body>
+
+</html>

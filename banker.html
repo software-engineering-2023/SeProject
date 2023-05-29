@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banker Dashboard</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+  <header>
+    <img src="logo.png" width="150px" height="80px">
+    <h1>Welcome, Banker!</h1>
+
+    
+      <button id="logout" onclick="logout()">Log out</button>
+  </header>
+
+  <nav>
+    <ul class="list">
+      <li><a href="#dashboard" onclick="toggleSection('hdashboard')">Dashboard</a></li>
+      <li><a href="#customer-management" onclick="toggleSection('hcustomer-management')">Customer Management</a></li>
+      <li><a href="#reports" onclick="toggleSection('hreports')">Reports</a></li>
+      <li><a href="#loan-requests" onclick="toggleSection('hloan')">Loan Requests</a></li>
+      <li><a href="#credit-requests" onclick="toggleSection('hcredit')">Credit Card Requests</a></li>
+      <li><a href="#customer-support" onclick="toggleSection('hcustomer-support')">Customer Support</a></li>
+      <li><a href="#Reportto-Admin" onclick="toggleSection('hReportto-Admin')">Report To Admin</a></li>
+      <li><a href="#account-settings" onclick="toggleSection('haccount-settings')">Account Settings</a></li>
+    </ul>
+    <!-- <button id="logout" onclick="logout()">Log out</button> -->
+  </nav>
+
+  <main>
+    <section class="sections dashboard" id="hdashboard">
+      <div class="performance">
+        <h2>Performance Summary</h2>
+        <div class="performance-summary">
+          <div class="kpi">
+            <h3>Accounts Opened</h3>
+            <div id="counter">0</div>
+
+          </div>
+          <div class="kpi">
+            <h3>Loan Approvals</h3>
+            <div id="counterr">0</div>
+          </div>
+          <div class="kpi">
+            <h3>Revenue Generated</h3>
+            <div id="counterrr">0</div>
+          </div>
+          <div class="kpi">
+            <h3>Customer Satisfaction</h3>
+            <div id="counterrrr">0</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="notifications">
+        <h2>Notifications and Alerts</h2>
+        <ul class="notification-list">
+          <li>
+            <span class="notification-type">Task</span>
+            <span class="notification-message">Review loan application for John Smith</span>
+          </li>
+          <li>
+            <span class="notification-type">Alert</span>
+            <span class="notification-message">Urgent customer request received</span>
+          </li>
+          <li>
+            <span class="notification-type">Notification</span>
+            <span class="notification-message">System maintenance scheduled for tomorrow</span>
+          </li>
+        </ul>
+      </div>
+      <div class="customer-insights">
+        <h2>Customer Insights</h2>
+        <div class="customer-summary">
+          <div class="insight">
+            <h3>Total Customers</h3>
+            <div id="counter1">0</div>
+          </div>
+          <div class="insight">
+            <h3>Average Account Balance</h3>
+            <div id="counter2">0</div>
+          </div>
+          <div class="insight">
+            <h3>Customer Segments</h3>
+            <div id="counter3">0</div>
+          </div>
+          <div class="insight">
+            <h3>Customer Lifetime Value</h3>
+            <div id="counter4">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="recent-activities">
+        <h2>Recent Activities</h2>
+        <ul class="activity-list">
+          <li>
+            <span class="activity-date">May 15, 2023</span>
+            <span class="activity-description">Meeting with client: John Smith</span>
+          </li>
+          <li>
+            <span class="activity-date">May 14, 2023</span>
+            <span class="activity-description">Completed loan application for Sarah Johnson</span>
+          </li>
+          <li>
+            <span class="activity-date">May 12, 2023</span>
+            <span class="activity-description">Followed up with customer inquiries</span>
+          </li>
+        </ul>
+      </div>
+      <div class="news-updates">
+        <h2>News and Updates</h2>
+        <ul class="news-list">
+          <li>
+            <span class="news-date">May 18, 2023</span>
+            <span class="news-title">New Banking Regulations Announced</span>
+            <p class="news-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae mauris
+              lectus. Donec ac sem sit amet odio condimentum mattis. Fusce suscipit aliquam lorem quis tincidunt.</p>
+          </li>
+          <li>
+            <span class="news-date">May 16, 2023</span>
+            <span class="news-title">Banking Technology Innovation Conference</span>
+            <p class="news-description">In hac habitasse platea dictumst. Vestibulum ac ante massa. Sed nec dignissim
+              libero. Aliquam luctus ipsum id velit commodo euismod.</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="personalized-messages">
+        <h2>Personalized Messages</h2>
+        <div class="message-container">
+          <div class="message">
+            <span class="message-sender">John Doe</span>
+            <span class="message-date">May 17, 2023</span>
+            <p class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae mauris
+              lectus. Donec ac sem sit amet odio condimentum mattis.</p>
+          </div>
+          <div class="message">
+            <span class="message-sender">Jane Smith</span>
+            <span class="message-date">May 15, 2023</span>
+            <p class="message-content">In hac habitasse platea dictumst. Vestibulum ac ante massa. Sed nec dignissim
+              libero.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="sections hidden" id="hcustomer-management">
+      <div class="customer-search">
+        <h2>Search Customers</h2>
+        <form>
+          <input id="inputBox" type="text" placeholder="Enter customer name or ID">
+          <button id="myButton" type="button">Search</button>
+        </form>
+      </div>
+      <div class="customer-list hidden" id="hlist">
+        <div>
+          <h3>Customer List</h3>
+          <ul>
+            <li>
+              <div class="listitems">
+                <span class="customer-name">Mohamed Ahmed</span>
+                <span class="customer-id">#123456</span>
+                <button class="view-details" onclick="viewd('details1')">View Details</button>
+              </div>
+              <div id="details1" class="details hidden">
+                <div class="personal-info">
+                  <h3>Personal Information</h3>
+                  <p><strong>Name:</strong> Mohamed Ahmed</p>
+                  <p><strong>Date of Birth:</strong> January 1, 1980</p>
+                  <p><strong>Gender:</strong> Male</p>
+                  <p><strong>Contact Information:</strong> Mohamed.Ahmed@example.com, 01123456789</p>
+                </div>
+                <div class="account-info">
+                  <h3>Account Information</h3>
+                  <p><strong>Account Number:</strong> 123456</p>
+                  <p><strong>Account Type:</strong> 123456</p>
+                  <p><strong>Account Balance:</strong> $1,000.00</p>
+                  <p><strong>Account Status:</strong> Active</p>
+                </div>
+                <div class="transaction-history">
+                  <h3>Transaction History</h3>
+                  <ul>
+                    <li>May 1, 2023 - Deposit - $500.00</li>
+                    <li>April 15, 2023 - Withdrawal - $200.00</li>
+                    <li>April 5, 2023 - Deposit - $300.00</li>
+                  </ul>
+                </div>
+                <div class="identification-info">
+                  <h3>Identification Information</h3>
+                  <p><strong>ID Number:</strong> ABC123XYZ</p>
+                  <p><strong>Expiration Date:</strong> December 31, 2025</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="listitems">
+                <span class="customer-name">Mohamed Mohamed</span>
+                <span class="customer-id">#789012</span>
+                <button class="view-details" onclick="viewd('details2')">View Details</button>
+              </div>
+              <div id="details2" class="details hidden">
+                <div class="personal-info">
+                  <h3>Personal Information</h3>
+                  <p><strong>Name:</strong> Mohamed Mohamed</p>
+                  <p><strong>Date of Birth:</strong> April 1, 1990</p>
+                  <p><strong>Gender:</strong> Male</p>
+                  <p><strong>Contact Information:</strong> Mohamed.Mohamed@example.com, 01012345678</p>
+                </div>
+                <div class="account-info">
+                  <h3>Account Information</h3>
+                  <p><strong>Account Number:</strong> 789012</p>
+                  <p><strong>Account Type:</strong> Savings</p>
+                  <p><strong>Account Balance:</strong> $3,000.00</p>
+                  <p><strong>Account Status:</strong> Active</p>
+                </div>
+                <div class="transaction-history">
+                  <h3>Transaction History</h3>
+                  <ul>
+                    <li>May 1, 2023 - Deposit - $500.00</li>
+                    <li>April 15, 2023 - Withdrawal - $200.00</li>
+                    <li>April 5, 2023 - Deposit - $300.00</li>
+                  </ul>
+                </div>
+                <div class="identification-info">
+                  <h3>Identification Information</h3>
+                  <p><strong>ID Number:</strong> ABC124XYZ</p>
+                  <p><strong>Expiration Date:</strong> December 31, 2025</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="listitems">
+                <span class="customer-name">Mohamed Mahmoud</span>
+                <span class="customer-id">#548613</span>
+                <button class="view-details" onclick="viewd('details3')">View Details</button>
+              </div>
+              <div id="details3" class="details hidden">
+                <div class="personal-info">
+                  <h3>Personal Information</h3>
+                  <p><strong>Name:</strong> Mohamed Mahmoud</p>
+                  <p><strong>Date of Birth:</strong> Octobar 20, 1995</p>
+                  <p><strong>Gender:</strong> Male</p>
+                  <p><strong>Contact Information:</strong> Mohamed.Mahmoud@example.com, 01213456789</p>
+                </div>
+                <div class="account-info">
+                  <h3>Account Information</h3>
+                  <p><strong>Account Number:</strong> 548613</p>
+                  <p><strong>Account Type:</strong> Checking</p>
+                  <p><strong>Account Balance:</strong> $500.00</p>
+                  <p><strong>Account Status:</strong> Active</p>
+                </div>
+                <div class="transaction-history">
+                  <h3>Transaction History</h3>
+                  <ul>
+                    <li>May 1, 2023 - Deposit - $500.00</li>
+                    <li>April 15, 2023 - Withdrawal - $200.00</li>
+                    <li>April 5, 2023 - Deposit - $300.00</li>
+                  </ul>
+                </div>
+                <div class="identification-info">
+                  <h3>Identification Information</h3>
+                  <p><strong>ID Number:</strong> ABC125XYZ</p>
+                  <p><strong>Expiration Date:</strong> December 31, 2025</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="sections hidden" id="hreports">
+      <h2>Reports</h2>
+      <div class="report-list">
+        <ul>
+          <li>
+            <div class="reportss">
+              <span class="report-name">Monthly Transactions</span>
+              <button class="view-report" onclick="viewd('reports1')">View Report</button>
+            </div>
+            <div id="reports1" class="report details hidden">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Type</th>
+                  <th>Amount</th>
+                  <th>Parties Involved</th>
+                </tr>
+                <tr>
+                  <td>2023-05-01</td>
+                  <td>Deposit</td>
+                  <td>$500</td>
+                  <td>John Doe</td>
+                </tr>
+                <tr>
+                  <td>2023-05-05</td>
+                  <td>Withdrawal</td>
+                  <td>$200</td>
+                  <td>Jane Smith</td>
+                </tr>
+                <tr>
+                  <td>2023-05-10</td>
+                  <td>Transfer</td>
+                  <td>$100</td>
+                  <td>David Johnson</td>
+                </tr>
+              </table>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section class="sections hidden" id="hloan">
+      <h2>Loan Requests</h2>
+      <div class="loan-list">
+        <ul>
+          <li>
+            <div class="reportss">
+              <span class="loan-id">#123456</span>
+              <span class="loan-amount">$5,000</span>
+              <span class="loan-status">Approved</span>
+              <button class="view-details" onclick="viewd('loand1')">View Details</button>
+            </div>
+            <div class="loan-details details hidden" id="loand1">
+              <h2>Loan Details</h2>
+              <div class="loan-info">
+                <h3>Borrower Information</h3>
+                <p>Name: Mohamed Ahmed</p>
+                <p>Contact Details: Mohamed.Ahmed@example.com | 01123456789</p>
+                <p>Identification: ABC123XYZ</p>
+              </div>
+              <div class="loan-info">
+                <h3>Loan Details</h3>
+                <p>Loan Amount: $5,000</p>
+                <p>Loan Purpose: Home Purchase</p>
+                <p>Loan Term: 5 years</p>
+                <p>Interest Rate: 6%</p>
+                <p>Repayment Schedule: Monthly</p>
+                <p>Collateral: House</p>
+                <p>Loan Status: Approved</p>
+                <p>Loan Agreement: <a href="#">View Agreement</a></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="reportss">
+              <span class="loan-id">#548613</span>
+              <span class="loan-amount">$10,000</span>
+              <span class="loan-status status">Pending</span>
+              <div id="buttons">
+                <button onclick="updateStatus('accept')">Accept</button>
+                <button onclick="updateStatus('reject')">Reject</button>
+              </div>
+              <button class="view-details" onclick="viewd('loand2')">View Details</button>
+            </div>
+            <div class="loan-details details hidden" id="loand2">
+              <h2>Loan Details</h2>
+              <div class="loan-info">
+                <h3>Borrower Information</h3>
+                <p>Name: Mohamed Mahmoud</p>
+                <p>Contact Details: Mohamed.Mahmoud@example.com | 01213456789</p>
+                <p>Identification: ABC125XYZ</p>
+              </div>
+              <div class="loan-info">
+                <h3>Loan Details</h3>
+                <p>Loan Amount: $10,000</p>
+                <p>Loan Purpose: Home Purchase</p>
+                <p>Loan Term: 5 years</p>
+                <p>Interest Rate: 6%</p>
+                <p>Repayment Schedule: Monthly</p>
+                <p>Collateral: House</p>
+                <div class="acceptreject">
+                  <p>Loan Status: <span class="status">Pending</span></p>
+                  <div id="buttons2">
+                    <button class="acceptbutton" onclick="updateStatus('accept')">Approve</button>
+                    <button class="rejectbutton" onclick="updateStatus('reject')">Reject</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sections hidden" id="hcredit">
+      <h2>Credit Card Requests</h2>
+      <div class="credit-list">
+        <ul>
+          <li>
+            <div class="reportss">
+              <span class="credit-id">#123456</span>
+              <span class="credit-status">Approved</span>
+              <button class="view-details" onclick="viewd('creditd1')">View Details</button>
+            </div>
+            <div class="credit-details details hidden" id="creditd1">
+              <h2>Credit Card Details</h2>
+              <div class="credit-info">
+                <h3>Personal Information</h3>
+                <p>Name: Mohamed Ahmed</p>
+                <p>Contact Details: Mohamed.Ahmed@example.com | 01123456789</p>
+                <p>Identification: ABC123XYZ</p>
+              </div>
+              <div class="credit-info">
+                <h3>Employment Information</h3>
+                <ul>
+                  <li>Doctor</li>
+                  <li>Length of Employment: 25 years</li>
+                </ul>
+              </div>
+              <div class="credit-info">
+                <h3>Income Details:</h3>
+                <ul>
+                  <li>Annual Salary: $10,000</li>
+                </ul>
+              </div>
+              <div>
+                <p>Credit Card Status: Approved</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="reportss">
+              <span class="credit-id">#548613</span>
+              <span class="credit-status status1">Pending</span>
+              <div id="buttons">
+                <button onclick="updateStatus('accept')">Accept</button>
+                <button onclick="updateStatus('reject')">Reject</button>
+              </div>
+              <button class="view-details" onclick="viewd('creditd2')">View Details</button>
+            </div>
+            <div class="credit-details details hidden" id="creditd2">
+              <h2>Credit Card Details</h2>
+              <div class="credit-info">
+                <h3>Personal Information</h3>
+                <p>Name: Mohamed Mohamed</p>
+                <p>Contact Details: Mohamed.Mohamed@example.com | 01012345678</p>
+                <p>Identification: ABC124XYZ</p>
+              </div>
+              <div class="credit-info">
+                <h3>Employment Information</h3>
+                <ul>
+                  <li>Engineer</li>
+                  <li>Length of Employment: 10 Years</li>
+                </ul>
+              </div>
+              <div class="credit-info">
+                <h3>Income Details:</h3>
+                <ul>
+                  <li>Annual Salary: $15,000</li>
+                </ul>
+              </div>
+              <div class="acceptreject">
+                <p>Credit Card Status: <span class="status1">Pending</span></p>
+                <div id="buttons1">
+                  <button class="acceptbutton" onclick="updateStatus('accept1')">Approve</button>
+                  <button class="rejectbutton" onclick="updateStatus('reject1')">Reject</button>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sections hidden" id="hcustomer-support">
+      <div class="customer-support-questions">
+        <h2>Customer Questions</h2>
+
+        <div class="question" id="question1">
+          <h4>Question</h4>
+          <p>Customer Name: Mohamed Mohamed</p>
+          <p>Customer Email: Mohamed.Mohamed@example.com</p>
+          <p>Question: How can I change my account password?</p>
+          <div class="reply-form">
+            <form>
+              <textarea id="reply1" placeholder="Enter your reply"></textarea>
+              <button type="button" id="submit1">Send</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="question" id="question2">
+          <h4>Question</h4>
+          <p>Customer Name: Mohamed Ahmed</p>
+          <p>Customer Email: Mohamed.Ahmed@example.com</p>
+          <p>Question: What are the accepted payment methods?</p>
+          <div class="reply-form">
+            <form>
+              <textarea id="reply2" placeholder="Enter your reply"></textarea>
+              <button type="button" id="submit2">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sections hidden" id="haccount-settings">
+      <h2>Account Settings</h2>
+      <br>
+      <br>
+      <br>
+      <div class="account-info">
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password">
+          <button type="button" id="savechanges">Save Changes</button>
+        </form>
+      </div>
+      <div class="account-options">
+        <h3>Account Options</h3>
+        <ul>
+          <li>Enable Two-Factor Authentication</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="sections hidden" id="hReportto-Admin">
+      <h2>Report to Admin</h2>
+      <br>
+      <br>
+      <br>
+      <div class="account-info">
+        <form id="formuser">
+          <label for="username">Message</label>
+          <input type="text" id="username" placeholder="Enter your Message">
+          <input type="file" id="fileInput" style="display: none;">
+          <label for="fileInput" id="attachButton">Attach File</label>
+          <button type="button" id="savechanges">Send</button>
+        </form>
+      </div>
+    </section>
+
+
+  </main>
+  <div id="footer">
+    <footer>
+      <p>Banker Dashboard &copy; 2023</p>
+    </footer>
+  </div>
+  <script src="jfile.js"></script>
+</body>
+
+</html>

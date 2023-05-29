@@ -1,0 +1,507 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+#wrapper {
+  margin: 20px;
+}
+
+header {
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid white;
+}
+
+header img {
+  padding-top: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+h1 {
+  padding: 15px;
+  padding-left: 20px;
+}
+
+wrapper {
+  padding: 20px;
+}
+
+
+#logout{
+  padding: 10px 20px;
+  background-color: white;
+  color: navy;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logout:hover {
+  background-color: rgb(76, 187, 23);
+}
+
+nav,
+main,
+footer {
+    padding: 20px;
+}
+
+nav,
+header {
+    width: 1000;
+    background-color: navy;
+    color: white;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    height: 50px;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: navy;
+    display: inline;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: -5px;
+    border-right: 1px solid #001f3f;
+    cursor: pointer;
+}
+
+nav ul li:last-child {
+    border-right: none;
+}
+
+/* 
+nav ul li:hover {
+    background-color: #001f3f;
+} */
+
+nav ul li#navimg {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+p {
+  background-color: navy;
+  padding: 20px;
+  padding-left: 516px;
+  margin: 0;
+  color: white;
+  position: absolute;
+  width: 1000px;
+  bottom: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.maketransdiv {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.maketransdivv {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.maketransdivv h2{
+  text-align: center;
+}
+
+#maketrans {
+  height: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  width: 500px;
+  background-color: navy;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+}
+
+.accountname {
+  color: navy;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#acc{
+  float: left;
+  font-size: 35px;
+  margin-left: 100px;
+  margin-top: 32px;
+}
+
+.accountname span {
+  float: right;
+  color: navy;
+  font-size: 35px;
+  margin-top: 32px;
+  margin-right: 120px;
+}
+
+
+nav,
+header {
+  width: 1000;
+  background-color: navy;
+  color: white;
+}
+
+wrapper {
+  
+  margin-left: 20px;
+  background-color: white;
+  color: navy;
+}
+
+bank-transactions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bank-transactions li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.bank-transactions li:last-child {
+  border-bottom: none;
+}
+
+.bank-transactions .date {
+  font-weight: bold;
+  color: navy;
+}
+
+.bank-transactions .type {
+  flex-grow: 1;
+  margin-left: 20px;
+  color: navy;
+}
+
+ha1 {
+  color: navy;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.bank-transactions .amount {
+  color: #777;
+}
+
+.filter-container {
+  margin-top: 10px;
+}
+
+.filter-container {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.filter-container label {
+  margin-right: 10px;
+}
+
+.filter-container select,
+.filter-container input {
+  margin-right: 10px;
+}
+
+.filter-container button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.filter-container button:hover {
+  background-color: #45a049;
+}
+
+.transaction {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.transaction .date,
+.transaction .amount,
+.transaction .type,
+.transaction .location {
+  margin-right: 10px;
+}
+
+.transaction .datee,
+.transaction .amountt,
+.transaction .typee,
+.transaction .locationn {
+  /* margin-right: 10px; */
+  font-weight: bold;
+}
+
+.filter-container select,
+.filter-container input[type="date"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.transaction-containerr {
+  width: 80%;
+  height: 300px;
+  padding: 10px;
+  margin: 20px;
+  /* overflow-y: scroll; */
+}
+
+.transaction-wrapperr {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+
+.transactionn.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  display: none;
+  pointer-events: none;
+}
+
+.transactionn .date,
+.transactionn .amount,
+.transactionn .type {
+  display: inline-block;
+}
+
+.transactionn .amount {
+  color: green;
+}
+
+.transactionn .type {
+  color: blue;
+}
+
+.filter-containerr {
+  margin-top: 10px;
+}
+
+.filter-containerr {
+  margin-bottom: 20px;
+}
+
+.filter-containerr label {
+  margin-right: 10px;
+}
+
+.filter-containerr select,
+.filter-containerr input {
+  margin-right: 10px;
+}
+
+.filter-containerr button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-containerr button:hover {
+  background-color: #45a049;
+}
+
+.transactionn {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.transactionn .date,
+.transactionn .amount,
+.transactionn .type,
+.transactionn .location {
+  margin-right: 10px;
+}
+
+.filter-containerr select,
+.filter-containerr input[type="date"] {
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.info-container {
+  flex: 1.2;
+  padding: 50px;
+  text-align: center;
+}
+
+#neg {
+  color: red;
+}
+
+
+.transaction-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.transaction .date,
+.transaction .amount,
+.transaction .type {
+  display: inline-block;
+}
+
+.transaction .amount {
+  color: green;
+}
+
+.transaction .type {
+  color: blue;
+}
+
+#transaction-typee {
+  margin-right: 185px;
+}
+
+#startDatee {
+  margin-right: 185px;
+}
+
+#transaction-locationn {
+  margin-right: 185px;
+}
+
+footer {
+  position: fixed;
+  height: 40px;
+  bottom: 0;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  background-color: navy;
+  color: white;
+  text-align: center;
+}
+
+#issue-report-form{
+  padding-left: 40px;
+}
+#loanForm{
+  margin-left: 30px;
+}
+#type #labell{
+display: inline-block;
+}
+#app-issue[type="file"]{
+border: 1px solid black;
+border-radius: 3px;
+width: 40%;
+}
+#report-type{
+width: 20%;
+height: 30px;
+}
+.amount #labell, .duration #labell{
+display: inline-block;
+}
+h2 {
+text-align: left;
+color: navy;
+margin-top: 20px;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+.container input{
+width: 40%;
+}
+.container{
+margin: 0;
+display: flex;
+padding: 0;
+}
+#labell,p {
+display: block;
+font-weight: bold;
+font-size: large;
+color: navy;
+}
+textarea{
+width: 100%;
+}
+#app-issue {
+width: 20%;
+padding: 5px;
+font-size: 16px;
+}
+
+#buttomen {
+display: block;
+margin: 10px auto;
+
+padding: 10px 20px;
+font-size: 18px;
+background-color: navy;
+color: #fff;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+#buttomen:hover{
+background-color: lightgray;
+}
